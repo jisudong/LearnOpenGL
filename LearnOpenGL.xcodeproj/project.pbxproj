@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		2215150C22F4509000FD5D4F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2215150B22F4509000FD5D4F /* main.cpp */; };
+		22A796DA22F53FE100B6221C /* stb_image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22A796D822F53FE100B6221C /* stb_image.cpp */; };
+		22A796DB22F53FE100B6221C /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 22A796D922F53FE100B6221C /* glad.c */; };
+		22A798B522F54A1500B6221C /* triangles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22A798B422F54A1500B6221C /* triangles.cpp */; };
+		22A798B722F54AA300B6221C /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A796D422F53B9400B6221C /* libglfw.3.3.dylib */; };
+		22A798B822F54AA700B6221C /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A796D022F53B9300B6221C /* libGLEW.2.1.0.dylib */; };
+		22A798B922F54AAA00B6221C /* libassimp.4.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A796D222F53B9300B6221C /* libassimp.4.1.0.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +31,38 @@
 /* Begin PBXFileReference section */
 		2215150822F4509000FD5D4F /* LearnOpenGL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LearnOpenGL; sourceTree = BUILT_PRODUCTS_DIR; };
 		2215150B22F4509000FD5D4F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		22A796D022F53B9300B6221C /* libGLEW.2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libGLEW.2.1.0.dylib; sourceTree = "<group>"; };
+		22A796D222F53B9300B6221C /* libassimp.4.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libassimp.4.1.0.dylib; sourceTree = "<group>"; };
+		22A796D422F53B9400B6221C /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libglfw.3.3.dylib; sourceTree = "<group>"; };
+		22A796D822F53FE100B6221C /* stb_image.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stb_image.cpp; sourceTree = "<group>"; };
+		22A796D922F53FE100B6221C /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glad.c; sourceTree = "<group>"; };
+		22A796DE22F5402C00B6221C /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
+		22A7989A22F549B500B6221C /* container.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = container.jpg; sourceTree = "<group>"; };
+		22A7989B22F549B500B6221C /* metal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = metal.png; sourceTree = "<group>"; };
+		22A7989C22F549B500B6221C /* toy_box_disp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toy_box_disp.png; sourceTree = "<group>"; };
+		22A7989D22F549B500B6221C /* container2_specular.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = container2_specular.png; sourceTree = "<group>"; };
+		22A7989E22F549B500B6221C /* bricks2_disp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bricks2_disp.jpg; sourceTree = "<group>"; };
+		22A7989F22F549B500B6221C /* brickwall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = brickwall.jpg; sourceTree = "<group>"; };
+		22A798A022F549B500B6221C /* toy_box_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toy_box_normal.png; sourceTree = "<group>"; };
+		22A798A122F549B500B6221C /* wood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wood.png; sourceTree = "<group>"; };
+		22A798A222F549B500B6221C /* matrix.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = matrix.jpg; sourceTree = "<group>"; };
+		22A798A322F549B500B6221C /* brickwall_normal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = brickwall_normal.jpg; sourceTree = "<group>"; };
+		22A798A422F549B500B6221C /* bricks2_normal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bricks2_normal.jpg; sourceTree = "<group>"; };
+		22A798A522F549B500B6221C /* grass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grass.png; sourceTree = "<group>"; };
+		22A798A622F549B500B6221C /* container2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = container2.png; sourceTree = "<group>"; };
+		22A798A722F549B500B6221C /* window.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = window.png; sourceTree = "<group>"; };
+		22A798A822F549B500B6221C /* awesomeface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = awesomeface.png; sourceTree = "<group>"; };
+		22A798AA22F549B500B6221C /* bottom.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bottom.jpg; sourceTree = "<group>"; };
+		22A798AB22F549B500B6221C /* left.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = left.jpg; sourceTree = "<group>"; };
+		22A798AC22F549B500B6221C /* top.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = top.jpg; sourceTree = "<group>"; };
+		22A798AD22F549B500B6221C /* back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = back.jpg; sourceTree = "<group>"; };
+		22A798AE22F549B500B6221C /* right.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = right.jpg; sourceTree = "<group>"; };
+		22A798AF22F549B500B6221C /* front.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = front.jpg; sourceTree = "<group>"; };
+		22A798B022F549B500B6221C /* bricks2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bricks2.jpg; sourceTree = "<group>"; };
+		22A798B122F549B500B6221C /* marble.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = marble.jpg; sourceTree = "<group>"; };
+		22A798B222F549B500B6221C /* toy_box_diffuse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toy_box_diffuse.png; sourceTree = "<group>"; };
+		22A798B322F54A1500B6221C /* triangles.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = triangles.hpp; sourceTree = "<group>"; };
+		22A798B422F54A1500B6221C /* triangles.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = triangles.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +70,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22A798B822F54AA700B6221C /* libGLEW.2.1.0.dylib in Frameworks */,
+				22A798B722F54AA300B6221C /* libglfw.3.3.dylib in Frameworks */,
+				22A798B922F54AAA00B6221C /* libassimp.4.1.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,9 +98,137 @@
 		2215150A22F4509000FD5D4F /* LearnOpenGL */ = {
 			isa = PBXGroup;
 			children = (
+				22A796CE22F5361100B6221C /* GLSL */,
+				22A796CD22F5360400B6221C /* resources */,
+				22A796CA22F52EEA00B6221C /* src */,
+				22A796CB22F52F1C00B6221C /* includes */,
+				22A796CC22F535B400B6221C /* lib */,
 				2215150B22F4509000FD5D4F /* main.cpp */,
 			);
 			path = LearnOpenGL;
+			sourceTree = "<group>";
+		};
+		22A796CA22F52EEA00B6221C /* src */ = {
+			isa = PBXGroup;
+			children = (
+				22A7989822F5491F00B6221C /* 1.getting_started */,
+				22A796D922F53FE100B6221C /* glad.c */,
+				22A796D822F53FE100B6221C /* stb_image.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		22A796CB22F52F1C00B6221C /* includes */ = {
+			isa = PBXGroup;
+			children = (
+				22A796DF22F5402C00B6221C /* learnopengl */,
+				22A796DE22F5402C00B6221C /* stb_image.h */,
+			);
+			path = includes;
+			sourceTree = "<group>";
+		};
+		22A796CC22F535B400B6221C /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				22A796D122F53B9300B6221C /* assimp */,
+				22A796CF22F53B9300B6221C /* glew */,
+				22A796D322F53B9400B6221C /* glfw */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		22A796CD22F5360400B6221C /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				22A7989922F549B500B6221C /* textures */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		22A796CE22F5361100B6221C /* GLSL */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GLSL;
+			sourceTree = "<group>";
+		};
+		22A796CF22F53B9300B6221C /* glew */ = {
+			isa = PBXGroup;
+			children = (
+				22A796D022F53B9300B6221C /* libGLEW.2.1.0.dylib */,
+			);
+			path = glew;
+			sourceTree = "<group>";
+		};
+		22A796D122F53B9300B6221C /* assimp */ = {
+			isa = PBXGroup;
+			children = (
+				22A796D222F53B9300B6221C /* libassimp.4.1.0.dylib */,
+			);
+			path = assimp;
+			sourceTree = "<group>";
+		};
+		22A796D322F53B9400B6221C /* glfw */ = {
+			isa = PBXGroup;
+			children = (
+				22A796D422F53B9400B6221C /* libglfw.3.3.dylib */,
+			);
+			path = glfw;
+			sourceTree = "<group>";
+		};
+		22A796DF22F5402C00B6221C /* learnopengl */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = learnopengl;
+			sourceTree = "<group>";
+		};
+		22A7989822F5491F00B6221C /* 1.getting_started */ = {
+			isa = PBXGroup;
+			children = (
+				22A798B322F54A1500B6221C /* triangles.hpp */,
+				22A798B422F54A1500B6221C /* triangles.cpp */,
+			);
+			path = 1.getting_started;
+			sourceTree = "<group>";
+		};
+		22A7989922F549B500B6221C /* textures */ = {
+			isa = PBXGroup;
+			children = (
+				22A7989A22F549B500B6221C /* container.jpg */,
+				22A7989B22F549B500B6221C /* metal.png */,
+				22A7989C22F549B500B6221C /* toy_box_disp.png */,
+				22A7989D22F549B500B6221C /* container2_specular.png */,
+				22A7989E22F549B500B6221C /* bricks2_disp.jpg */,
+				22A7989F22F549B500B6221C /* brickwall.jpg */,
+				22A798A022F549B500B6221C /* toy_box_normal.png */,
+				22A798A122F549B500B6221C /* wood.png */,
+				22A798A222F549B500B6221C /* matrix.jpg */,
+				22A798A322F549B500B6221C /* brickwall_normal.jpg */,
+				22A798A422F549B500B6221C /* bricks2_normal.jpg */,
+				22A798A522F549B500B6221C /* grass.png */,
+				22A798A622F549B500B6221C /* container2.png */,
+				22A798A722F549B500B6221C /* window.png */,
+				22A798A822F549B500B6221C /* awesomeface.png */,
+				22A798A922F549B500B6221C /* skybox */,
+				22A798B022F549B500B6221C /* bricks2.jpg */,
+				22A798B122F549B500B6221C /* marble.jpg */,
+				22A798B222F549B500B6221C /* toy_box_diffuse.png */,
+			);
+			path = textures;
+			sourceTree = "<group>";
+		};
+		22A798A922F549B500B6221C /* skybox */ = {
+			isa = PBXGroup;
+			children = (
+				22A798AA22F549B500B6221C /* bottom.jpg */,
+				22A798AB22F549B500B6221C /* left.jpg */,
+				22A798AC22F549B500B6221C /* top.jpg */,
+				22A798AD22F549B500B6221C /* back.jpg */,
+				22A798AE22F549B500B6221C /* right.jpg */,
+				22A798AF22F549B500B6221C /* front.jpg */,
+			);
+			path = skybox;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +288,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2215150C22F4509000FD5D4F /* main.cpp in Sources */,
+				22A796DA22F53FE100B6221C /* stb_image.cpp in Sources */,
+				22A796DB22F53FE100B6221C /* glad.c in Sources */,
+				22A798B522F54A1500B6221C /* triangles.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +412,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LearnOpenGL/includes",
+					"$(PROJECT_DIR)/LearnOpenGL/includes/glad",
+					"$(PROJECT_DIR)/LearnOpenGL/includes/assimp",
+					"$(PROJECT_DIR)/LearnOpenGL/includes/GLEW",
+					"$(PROJECT_DIR)/LearnOpenGL/includes/GLFW",
+					"$(PROJECT_DIR)/LearnOpenGL/includes/glm",
+					"$(PROJECT_DIR)/LearnOpenGL/includes/KHR",
+					"$(PROJECT_DIR)/LearnOpenGL/includes/learnopengl",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LearnOpenGL/lib/glew",
+					"$(PROJECT_DIR)/LearnOpenGL/lib/assimp",
+					"$(PROJECT_DIR)/LearnOpenGL/lib/glfw",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -248,6 +437,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LearnOpenGL/includes",
+					"$(PROJECT_DIR)/LearnOpenGL/includes/glad",
+					"$(PROJECT_DIR)/LearnOpenGL/includes/assimp",
+					"$(PROJECT_DIR)/LearnOpenGL/includes/GLEW",
+					"$(PROJECT_DIR)/LearnOpenGL/includes/GLFW",
+					"$(PROJECT_DIR)/LearnOpenGL/includes/glm",
+					"$(PROJECT_DIR)/LearnOpenGL/includes/KHR",
+					"$(PROJECT_DIR)/LearnOpenGL/includes/learnopengl",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LearnOpenGL/lib/glew",
+					"$(PROJECT_DIR)/LearnOpenGL/lib/assimp",
+					"$(PROJECT_DIR)/LearnOpenGL/lib/glfw",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
