@@ -15,6 +15,7 @@
 		22A798B822F54AA700B6221C /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A796D022F53B9300B6221C /* libGLEW.2.1.0.dylib */; };
 		22A798B922F54AAA00B6221C /* libassimp.4.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A796D222F53B9300B6221C /* libassimp.4.1.0.dylib */; };
 		22A798BD22F7FAD300B6221C /* shader_c.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22A798BB22F7FAD300B6221C /* shader_c.cpp */; };
+		22A798C322F816A400B6221C /* texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22A798C122F816A400B6221C /* texture.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -69,6 +70,12 @@
 		22A798BC22F7FAD300B6221C /* shader_c.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = shader_c.hpp; sourceTree = "<group>"; };
 		22A798BF22F8011D00B6221C /* fragment.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = fragment.fs; sourceTree = "<group>"; };
 		22A798C022F8011D00B6221C /* vertex.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = vertex.vs; sourceTree = "<group>"; };
+		22A798C122F816A400B6221C /* texture.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = texture.cpp; sourceTree = "<group>"; };
+		22A798C222F816A400B6221C /* texture.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = texture.hpp; sourceTree = "<group>"; };
+		22A798C422F816F300B6221C /* 4.1.texture.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = 4.1.texture.fs; sourceTree = "<group>"; };
+		22A798C522F816F300B6221C /* 4.2.texture.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = 4.2.texture.vs; sourceTree = "<group>"; };
+		22A798C622F816F300B6221C /* 4.2.texture.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = 4.2.texture.fs; sourceTree = "<group>"; };
+		22A798C722F816F300B6221C /* 4.1.texture.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = 4.1.texture.vs; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,12 +111,12 @@
 		2215150A22F4509000FD5D4F /* LearnOpenGL */ = {
 			isa = PBXGroup;
 			children = (
+				2215150B22F4509000FD5D4F /* main.cpp */,
 				22A796CE22F5361100B6221C /* GLSL */,
 				22A796CD22F5360400B6221C /* resources */,
 				22A796CA22F52EEA00B6221C /* src */,
 				22A796CB22F52F1C00B6221C /* includes */,
 				22A796CC22F535B400B6221C /* lib */,
-				2215150B22F4509000FD5D4F /* main.cpp */,
 			);
 			path = LearnOpenGL;
 			sourceTree = "<group>";
@@ -198,6 +205,8 @@
 				22A798B422F54A1500B6221C /* triangles.cpp */,
 				22A798BC22F7FAD300B6221C /* shader_c.hpp */,
 				22A798BB22F7FAD300B6221C /* shader_c.cpp */,
+				22A798C222F816A400B6221C /* texture.hpp */,
+				22A798C122F816A400B6221C /* texture.cpp */,
 			);
 			path = 1.getting_started;
 			sourceTree = "<group>";
@@ -246,6 +255,10 @@
 			children = (
 				22A798BF22F8011D00B6221C /* fragment.fs */,
 				22A798C022F8011D00B6221C /* vertex.vs */,
+				22A798C422F816F300B6221C /* 4.1.texture.fs */,
+				22A798C722F816F300B6221C /* 4.1.texture.vs */,
+				22A798C622F816F300B6221C /* 4.2.texture.fs */,
+				22A798C522F816F300B6221C /* 4.2.texture.vs */,
 			);
 			path = 1.getting_started;
 			sourceTree = "<group>";
@@ -309,6 +322,7 @@
 				2215150C22F4509000FD5D4F /* main.cpp in Sources */,
 				22A798BD22F7FAD300B6221C /* shader_c.cpp in Sources */,
 				22A796DA22F53FE100B6221C /* stb_image.cpp in Sources */,
+				22A798C322F816A400B6221C /* texture.cpp in Sources */,
 				22A796DB22F53FE100B6221C /* glad.c in Sources */,
 				22A798B522F54A1500B6221C /* triangles.cpp in Sources */,
 			);

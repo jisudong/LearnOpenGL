@@ -16,8 +16,8 @@
 #include <fstream>
 #include <sstream>
 #include <cmath>
+#include <iostream>
 
-using namespace std;
 
 class Shader {
 public:
@@ -65,7 +65,7 @@ public:
             }
             
         } catch (std::ifstream::failure e) {
-            cout << "ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ" << endl;
+            std::cout << "ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ" << std::endl;
         }
         
         const char *vShaderCode = vertexCode.c_str();
