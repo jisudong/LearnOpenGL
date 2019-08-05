@@ -8,6 +8,7 @@
 
 #include <iostream>
 #include "triangles.hpp"
+#include "shader_c.hpp"
 
 int main(int argc, const char * argv[]) {
     
@@ -18,6 +19,8 @@ int main(int argc, const char * argv[]) {
 //    practice2();
 //    practice3();
     
+    // 1.2
+    inout();
     
     
     return 0;

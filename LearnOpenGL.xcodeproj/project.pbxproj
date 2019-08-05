@@ -14,6 +14,7 @@
 		22A798B722F54AA300B6221C /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A796D422F53B9400B6221C /* libglfw.3.3.dylib */; };
 		22A798B822F54AA700B6221C /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A796D022F53B9300B6221C /* libGLEW.2.1.0.dylib */; };
 		22A798B922F54AAA00B6221C /* libassimp.4.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A796D222F53B9300B6221C /* libassimp.4.1.0.dylib */; };
+		22A798BD22F7FAD300B6221C /* shader_c.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22A798BB22F7FAD300B6221C /* shader_c.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -63,6 +64,11 @@
 		22A798B222F549B500B6221C /* toy_box_diffuse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toy_box_diffuse.png; sourceTree = "<group>"; };
 		22A798B322F54A1500B6221C /* triangles.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = triangles.hpp; sourceTree = "<group>"; };
 		22A798B422F54A1500B6221C /* triangles.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = triangles.cpp; sourceTree = "<group>"; };
+		22A798BA22F55D5200B6221C /* shader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shader.h; sourceTree = "<group>"; };
+		22A798BB22F7FAD300B6221C /* shader_c.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = shader_c.cpp; sourceTree = "<group>"; };
+		22A798BC22F7FAD300B6221C /* shader_c.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = shader_c.hpp; sourceTree = "<group>"; };
+		22A798BF22F8011D00B6221C /* fragment.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = fragment.fs; sourceTree = "<group>"; };
+		22A798C022F8011D00B6221C /* vertex.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = vertex.vs; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +154,7 @@
 		22A796CE22F5361100B6221C /* GLSL */ = {
 			isa = PBXGroup;
 			children = (
+				22A798BE22F8011D00B6221C /* 1.getting_started */,
 			);
 			path = GLSL;
 			sourceTree = "<group>";
@@ -179,6 +186,7 @@
 		22A796DF22F5402C00B6221C /* learnopengl */ = {
 			isa = PBXGroup;
 			children = (
+				22A798BA22F55D5200B6221C /* shader.h */,
 			);
 			path = learnopengl;
 			sourceTree = "<group>";
@@ -188,6 +196,8 @@
 			children = (
 				22A798B322F54A1500B6221C /* triangles.hpp */,
 				22A798B422F54A1500B6221C /* triangles.cpp */,
+				22A798BC22F7FAD300B6221C /* shader_c.hpp */,
+				22A798BB22F7FAD300B6221C /* shader_c.cpp */,
 			);
 			path = 1.getting_started;
 			sourceTree = "<group>";
@@ -229,6 +239,15 @@
 				22A798AF22F549B500B6221C /* front.jpg */,
 			);
 			path = skybox;
+			sourceTree = "<group>";
+		};
+		22A798BE22F8011D00B6221C /* 1.getting_started */ = {
+			isa = PBXGroup;
+			children = (
+				22A798BF22F8011D00B6221C /* fragment.fs */,
+				22A798C022F8011D00B6221C /* vertex.vs */,
+			);
+			path = 1.getting_started;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2215150C22F4509000FD5D4F /* main.cpp in Sources */,
+				22A798BD22F7FAD300B6221C /* shader_c.cpp in Sources */,
 				22A796DA22F53FE100B6221C /* stb_image.cpp in Sources */,
 				22A796DB22F53FE100B6221C /* glad.c in Sources */,
 				22A798B522F54A1500B6221C /* triangles.cpp in Sources */,
@@ -412,6 +432,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.framework *.gch *.xcode* *.xcassets (*) .DS_Store CVS .svn .git .hg *.pbproj *.pbxproj";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LearnOpenGL/includes",
@@ -437,6 +458,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.framework *.gch *.xcode* *.xcassets (*) .DS_Store CVS .svn .git .hg *.pbproj *.pbxproj";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LearnOpenGL/includes",

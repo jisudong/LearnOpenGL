@@ -7,6 +7,7 @@
 //
 
 #include "triangles.hpp"
+
 using namespace std;
 
 void frameBuffer_size_callback(GLFWwindow *window, int width, int height);
