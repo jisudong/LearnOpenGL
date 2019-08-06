@@ -10,6 +10,7 @@
 #include "triangles.hpp"
 #include "shader_c.hpp"
 #include "texture.hpp"
+#include "transform.hpp"
 
 int main(int argc, const char * argv[]) {
     
@@ -26,6 +27,9 @@ int main(int argc, const char * argv[]) {
     // 1.4
 //    texture();
 //    texture2();
+    
+    // 1.5
+    transform();
     
     
     return 0;
