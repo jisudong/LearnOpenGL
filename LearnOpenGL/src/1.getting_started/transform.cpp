@@ -43,7 +43,7 @@ int transform() {
         return -1;
     }
     
-    Shader ourShader("/Users/xiujianshen/Documents/GLSL/Getting_Started/5.1.transform.vs", "/Users/xiujianshen/Documents/GLSL/Getting_Started/5.1.transform.fs");
+    Shader ourShader("./GLSL/1.getting_started/5.1.transform.vs", "./GLSL/1.getting_started/5.1.transform.fs");
     
     float vertices[] = {
     //     ---- 位置 ----       - 纹理坐标 -
@@ -87,7 +87,7 @@ int transform() {
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
     stbi_set_flip_vertically_on_load(true);
     int width, height, nrChannels;
-    unsigned char *data = stbi_load("/Users/xiujianshen/Documents/resources/container.jpg", &width, &height, &nrChannels, 0);
+    unsigned char *data = stbi_load("./resources/textures/container.jpg", &width, &height, &nrChannels, 0);
     if (data) {
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
         glGenerateMipmap(GL_TEXTURE_2D);
@@ -102,7 +102,7 @@ int transform() {
     
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-    data = stbi_load("/Users/xiujianshen/Documents/resources/awesomeface.png", &width, &height, &nrChannels, 0);
+    data = stbi_load("./resources/textures/awesomeface.png", &width, &height, &nrChannels, 0);
     if (data) {
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);
         glGenerateMipmap(GL_TEXTURE_2D);

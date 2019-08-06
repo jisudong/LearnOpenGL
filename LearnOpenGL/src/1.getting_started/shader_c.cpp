@@ -107,7 +107,7 @@ int inout() {
     //    glDeleteShader(vertexShader);
     //    glDeleteShader(fragmentShader);
 
-    Shader ourShader("./GLSL/1.getting_started/vertex.vs", "./GLSL/1.getting_started/fragment.fs");
+    Shader ourShader("./GLSL/1.getting_started/3.1.vertex.vs", "./GLSL/1.getting_started/3.1.fragment.fs");
     
     float vertices[] = {
         // 位置              // 颜色

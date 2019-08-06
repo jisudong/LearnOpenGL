@@ -11,6 +11,7 @@
 #include "shader_c.hpp"
 #include "texture.hpp"
 #include "transform.hpp"
+#include "coordinate_systems.hpp"
 
 int main(int argc, const char * argv[]) {
     
@@ -29,7 +30,12 @@ int main(int argc, const char * argv[]) {
 //    texture2();
     
     // 1.5
-    transform();
+//    transform();
+    
+    // 1.6
+//    coordinate();
+//    more3D();
+    tenBox();
     
     
     return 0;
