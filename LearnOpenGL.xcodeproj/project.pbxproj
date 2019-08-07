@@ -18,6 +18,7 @@
 		22A798C322F816A400B6221C /* texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22A798C122F816A400B6221C /* texture.cpp */; };
 		22A798CA22F9311000B6221C /* transform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22A798C922F9311000B6221C /* transform.cpp */; };
 		22A798CD22F94F3C00B6221C /* coordinate_systems.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22A798CB22F94F3C00B6221C /* coordinate_systems.cpp */; };
+		22A798D822FAAC6600B6221C /* camera_c.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22A798D622FAAC6600B6221C /* camera_c.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -87,6 +88,10 @@
 		22A798D022F950B500B6221C /* 6.1.coordinate.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 6.1.coordinate.vs; sourceTree = "<group>"; };
 		22A798D122F950B500B6221C /* 5.1.transform.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 5.1.transform.fs; sourceTree = "<group>"; };
 		22A798D522FAAA8200B6221C /* camera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = camera.h; sourceTree = "<group>"; };
+		22A798D622FAAC6600B6221C /* camera_c.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = camera_c.cpp; sourceTree = "<group>"; };
+		22A798D722FAAC6600B6221C /* camera_c.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = camera_c.hpp; sourceTree = "<group>"; };
+		22A798D922FAAFC600B6221C /* 7.1.camera.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 7.1.camera.vs; sourceTree = "<group>"; };
+		22A798DA22FAAFC600B6221C /* 7.1.camera.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 7.1.camera.fs; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +228,8 @@
 				22A798C922F9311000B6221C /* transform.cpp */,
 				22A798CC22F94F3C00B6221C /* coordinate_systems.hpp */,
 				22A798CB22F94F3C00B6221C /* coordinate_systems.cpp */,
+				22A798D722FAAC6600B6221C /* camera_c.hpp */,
+				22A798D622FAAC6600B6221C /* camera_c.cpp */,
 			);
 			path = 1.getting_started;
 			sourceTree = "<group>";
@@ -279,6 +286,8 @@
 				22A798CE22F950B400B6221C /* 5.1.transform.vs */,
 				22A798CF22F950B400B6221C /* 6.1.coordinate.fs */,
 				22A798D022F950B500B6221C /* 6.1.coordinate.vs */,
+				22A798DA22FAAFC600B6221C /* 7.1.camera.fs */,
+				22A798D922FAAFC600B6221C /* 7.1.camera.vs */,
 			);
 			path = 1.getting_started;
 			sourceTree = "<group>";
@@ -343,6 +352,7 @@
 				22A798CA22F9311000B6221C /* transform.cpp in Sources */,
 				22A798BD22F7FAD300B6221C /* shader_c.cpp in Sources */,
 				22A796DA22F53FE100B6221C /* stb_image.cpp in Sources */,
+				22A798D822FAAC6600B6221C /* camera_c.cpp in Sources */,
 				22A798C322F816A400B6221C /* texture.cpp in Sources */,
 				22A796DB22F53FE100B6221C /* glad.c in Sources */,
 				22A798CD22F94F3C00B6221C /* coordinate_systems.cpp in Sources */,

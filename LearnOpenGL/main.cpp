@@ -12,6 +12,7 @@
 #include "texture.hpp"
 #include "transform.hpp"
 #include "coordinate_systems.hpp"
+#include "camera_c.hpp"
 
 int main(int argc, const char * argv[]) {
     
@@ -35,7 +36,10 @@ int main(int argc, const char * argv[]) {
     // 1.6
 //    coordinate();
 //    more3D();
-    tenBox();
+//    tenBox();
+    
+    // 1.7
+    func_camera();
     
     
     return 0;
