@@ -10,11 +10,11 @@
 
 using namespace std;
 
-void frameBuffer_size_callback(GLFWwindow *window, int width, int height);
-void processInput(GLFWwindow *window);
+void tri_frameBuffer_size_callback(GLFWwindow *window, int width, int height);
+void tri_processInput(GLFWwindow *window);
 
-const unsigned int SCR_WIDTH = 800;
-const unsigned int SCR_HEIGHT = 600;
+const unsigned int TRI_SCR_WIDTH = 800;
+const unsigned int TRI_SCR_HEIGHT = 600;
 
 const char *vertexShaderSource = "#version 330 core\n"
     "layout (location = 0) in vec3 aPos;\n"
@@ -40,14 +40,14 @@ int drawTriangle() {
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 #endif
     
-    GLFWwindow *window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "LearnOpenGL", NULL, NULL);
+    GLFWwindow *window = glfwCreateWindow(TRI_SCR_WIDTH, TRI_SCR_HEIGHT, "LearnOpenGL", NULL, NULL);
     if (window == NULL) {
         std::cout << "Failed to create GLFW window" << std::endl;
         glfwTerminate();
         return -1;
     }
     glfwMakeContextCurrent(window);
-    glfwSetFramebufferSizeCallback(window, frameBuffer_size_callback);
+    glfwSetFramebufferSizeCallback(window, tri_frameBuffer_size_callback);
     
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
         std::cout << "Failed to initialize GLAD" << std::endl;
@@ -113,7 +113,7 @@ int drawTriangle() {
     
     
     while (!glfwWindowShouldClose(window)) {
-        processInput(window);
+        tri_processInput(window);
         
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
@@ -143,7 +143,7 @@ int drawRectangle() {
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 #endif
     
-    GLFWwindow *window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "LearnOpenGL", NULL, NULL);
+    GLFWwindow *window = glfwCreateWindow(TRI_SCR_WIDTH, TRI_SCR_HEIGHT, "LearnOpenGL", NULL, NULL);
     if (window == NULL) {
         cout << "Failed to create GLFW window" << endl;
         glfwTerminate();
@@ -151,7 +151,7 @@ int drawRectangle() {
     }
     
     glfwMakeContextCurrent(window);
-    glfwSetFramebufferSizeCallback(window, frameBuffer_size_callback);
+    glfwSetFramebufferSizeCallback(window, tri_frameBuffer_size_callback);
     
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
         cout << "Failed to initialize GLAD" << endl;
@@ -227,7 +227,7 @@ int drawRectangle() {
     glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
     
     while (!glfwWindowShouldClose(window)) {
-        processInput(window);
+        tri_processInput(window);
         
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
@@ -258,14 +258,14 @@ int practice1() {
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 #endif
     
-    GLFWwindow *window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "LearnOpenGL", NULL, NULL);
+    GLFWwindow *window = glfwCreateWindow(TRI_SCR_WIDTH, TRI_SCR_HEIGHT, "LearnOpenGL", NULL, NULL);
     if (window == NULL) {
         cout << "Failed to create GLFW window" << endl;
         glfwTerminate();
         return -1;
     }
     glfwMakeContextCurrent(window);
-    glfwSetFramebufferSizeCallback(window, frameBuffer_size_callback);
+    glfwSetFramebufferSizeCallback(window, tri_frameBuffer_size_callback);
     
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
         cout << "Failed initialize to GLAD" << endl;
@@ -345,7 +345,7 @@ int practice1() {
 //    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
     
     while (!glfwWindowShouldClose(window)) {
-        processInput(window);
+        tri_processInput(window);
         
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
@@ -376,14 +376,14 @@ int practice2() {
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 #endif
     
-    GLFWwindow *window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "LearnOpenGL", NULL, NULL);
+    GLFWwindow *window = glfwCreateWindow(TRI_SCR_WIDTH, TRI_SCR_HEIGHT, "LearnOpenGL", NULL, NULL);
     if (window == NULL) {
         cout << "Failed to create GLFW window" << endl;
         glfwTerminate();
         return -1;
     }
     glfwMakeContextCurrent(window);
-    glfwSetFramebufferSizeCallback(window, frameBuffer_size_callback);
+    glfwSetFramebufferSizeCallback(window, tri_frameBuffer_size_callback);
     
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
         cout << "Failed initialize to GLAD" << endl;
@@ -462,7 +462,7 @@ int practice2() {
     //    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
     
     while (!glfwWindowShouldClose(window)) {
-        processInput(window);
+        tri_processInput(window);
         
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
@@ -504,14 +504,14 @@ int practice3() {
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 #endif
     
-    GLFWwindow *window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "LearnOpenGL", NULL, NULL);
+    GLFWwindow *window = glfwCreateWindow(TRI_SCR_WIDTH, TRI_SCR_HEIGHT, "LearnOpenGL", NULL, NULL);
     if (window == NULL) {
         cout << "Failed to create GLFW window" << endl;
         glfwTerminate();
         return -1;
     }
     glfwMakeContextCurrent(window);
-    glfwSetFramebufferSizeCallback(window, frameBuffer_size_callback);
+    glfwSetFramebufferSizeCallback(window, tri_frameBuffer_size_callback);
     
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
         cout << "Failed initialize to GLAD" << endl;
@@ -615,7 +615,7 @@ int practice3() {
     //    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
     
     while (!glfwWindowShouldClose(window)) {
-        processInput(window);
+        tri_processInput(window);
         
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
@@ -640,11 +640,11 @@ int practice3() {
     return 0;
 }
 
-void frameBuffer_size_callback(GLFWwindow *window, int width, int height) {
+void tri_frameBuffer_size_callback(GLFWwindow *window, int width, int height) {
     glViewport(0, 0, width, height);
 }
 
-void processInput(GLFWwindow *window) {
+void tri_processInput(GLFWwindow *window) {
     if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS) {
         glfwSetWindowShouldClose(window, true);
     }

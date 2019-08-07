@@ -86,6 +86,7 @@
 		22A798CF22F950B400B6221C /* 6.1.coordinate.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 6.1.coordinate.fs; sourceTree = "<group>"; };
 		22A798D022F950B500B6221C /* 6.1.coordinate.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 6.1.coordinate.vs; sourceTree = "<group>"; };
 		22A798D122F950B500B6221C /* 5.1.transform.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 5.1.transform.fs; sourceTree = "<group>"; };
+		22A798D522FAAA8200B6221C /* camera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = camera.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				22A798BA22F55D5200B6221C /* shader.h */,
+				22A798D522FAAA8200B6221C /* camera.h */,
 			);
 			path = learnopengl;
 			sourceTree = "<group>";

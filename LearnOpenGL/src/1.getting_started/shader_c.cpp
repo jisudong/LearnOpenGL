@@ -19,7 +19,7 @@ using namespace std;
 extern const unsigned int SHADER_SCR_WIDTH = 800;
 extern const unsigned int SHADER_SCR_HEIGHT = 600;
 
-void framebuffer_size_callback(GLFWwindow *window, int width, int height);
+void shader_framebuffer_size_callback(GLFWwindow *window, int width, int height);
 void shader_processInput(GLFWwindow *window);
 
 
@@ -67,7 +67,7 @@ int inout() {
         return -1;
     }
     glfwMakeContextCurrent(window);
-    glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
+    glfwSetFramebufferSizeCallback(window, shader_framebuffer_size_callback);
     
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
         cout << "failed initialize glad" << endl;
@@ -163,7 +163,7 @@ int inout() {
     return 0;
 }
 
-void framebuffer_size_callback(GLFWwindow *window, int width, int height)
+void shader_framebuffer_size_callback(GLFWwindow *window, int width, int height)
 {
     glViewport(0, 0, width, height);
 }
