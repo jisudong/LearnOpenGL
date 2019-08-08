@@ -13,9 +13,12 @@
 #include "transform.hpp"
 #include "coordinate_systems.hpp"
 #include "camera_c.hpp"
+#include "colors.hpp"
+#include "basic_lighting.hpp"
 
 int main(int argc, const char * argv[]) {
     
+    // -------------------- 1.getting_started ---------------------
     // 1.1
 //    drawTriangle();
 //    drawRectangle();
@@ -39,8 +42,15 @@ int main(int argc, const char * argv[]) {
 //    tenBox();
     
     // 1.7
-    func_camera();
+//    func_camera();
     
+    
+    // ----------------------- 2.lighting ---------------------
+    // 2.1
+//    colors();
+    
+    // 2.2
+    lighting();
     
     return 0;
 }
