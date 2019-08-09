@@ -10,6 +10,7 @@
 		2215150C22F4509000FD5D4F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2215150B22F4509000FD5D4F /* main.cpp */; };
 		225CF07A22FC1894009F09AE /* colors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 225CF07922FC1894009F09AE /* colors.cpp */; };
 		225CF08322FC1AA6009F09AE /* basic_lighting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 225CF08222FC1AA6009F09AE /* basic_lighting.cpp */; };
+		225CF08C22FD6613009F09AE /* materials.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 225CF08A22FD6613009F09AE /* materials.cpp */; };
 		22A796DA22F53FE100B6221C /* stb_image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22A796D822F53FE100B6221C /* stb_image.cpp */; };
 		22A796DB22F53FE100B6221C /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 22A796D922F53FE100B6221C /* glad.c */; };
 		22A798B522F54A1500B6221C /* triangles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22A798B422F54A1500B6221C /* triangles.cpp */; };
@@ -52,6 +53,12 @@
 		225CF08722FC1B06009F09AE /* 2.1.basic_lighting.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 2.1.basic_lighting.fs; sourceTree = "<group>"; };
 		225CF08822FC1B06009F09AE /* 2.2.basic_lighting.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 2.2.basic_lighting.fs; sourceTree = "<group>"; };
 		225CF08922FC1B06009F09AE /* 2.1.basic_lighting.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 2.1.basic_lighting.vs; sourceTree = "<group>"; };
+		225CF08A22FD6613009F09AE /* materials.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = materials.cpp; sourceTree = "<group>"; };
+		225CF08B22FD6613009F09AE /* materials.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = materials.hpp; sourceTree = "<group>"; };
+		225CF08D22FD6663009F09AE /* 3.1.materials.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 3.1.materials.vs; sourceTree = "<group>"; };
+		225CF08E22FD6663009F09AE /* 3.1.lamp.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 3.1.lamp.vs; sourceTree = "<group>"; };
+		225CF08F22FD6663009F09AE /* 3.1.materials.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 3.1.materials.fs; sourceTree = "<group>"; };
+		225CF09022FD6663009F09AE /* 3.1.lamp.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 3.1.lamp.fs; sourceTree = "<group>"; };
 		22A796D022F53B9300B6221C /* libGLEW.2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libGLEW.2.1.0.dylib; sourceTree = "<group>"; };
 		22A796D222F53B9300B6221C /* libassimp.4.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libassimp.4.1.0.dylib; sourceTree = "<group>"; };
 		22A796D422F53B9400B6221C /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libglfw.3.3.dylib; sourceTree = "<group>"; };
@@ -160,6 +167,8 @@
 				225CF07922FC1894009F09AE /* colors.cpp */,
 				225CF08122FC1AA6009F09AE /* basic_lighting.hpp */,
 				225CF08222FC1AA6009F09AE /* basic_lighting.cpp */,
+				225CF08B22FD6613009F09AE /* materials.hpp */,
+				225CF08A22FD6613009F09AE /* materials.cpp */,
 			);
 			path = 2.lighting;
 			sourceTree = "<group>";
@@ -177,6 +186,10 @@
 				225CF08622FC1B06009F09AE /* 2.1.lamp.vs */,
 				225CF08822FC1B06009F09AE /* 2.2.basic_lighting.fs */,
 				225CF08522FC1B05009F09AE /* 2.2.basic_lighting.vs */,
+				225CF09022FD6663009F09AE /* 3.1.lamp.fs */,
+				225CF08E22FD6663009F09AE /* 3.1.lamp.vs */,
+				225CF08F22FD6663009F09AE /* 3.1.materials.fs */,
+				225CF08D22FD6663009F09AE /* 3.1.materials.vs */,
 			);
 			path = 2.lighting;
 			sourceTree = "<group>";
@@ -398,6 +411,7 @@
 				22A798CA22F9311000B6221C /* transform.cpp in Sources */,
 				22A798BD22F7FAD300B6221C /* shader_c.cpp in Sources */,
 				22A796DA22F53FE100B6221C /* stb_image.cpp in Sources */,
+				225CF08C22FD6613009F09AE /* materials.cpp in Sources */,
 				22A798D822FAAC6600B6221C /* camera_c.cpp in Sources */,
 				225CF07A22FC1894009F09AE /* colors.cpp in Sources */,
 				22A798C322F816A400B6221C /* texture.cpp in Sources */,

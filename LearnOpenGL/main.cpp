@@ -15,6 +15,7 @@
 #include "camera_c.hpp"
 #include "colors.hpp"
 #include "basic_lighting.hpp"
+#include "materials.hpp"
 
 int main(int argc, const char * argv[]) {
     
@@ -50,7 +51,10 @@ int main(int argc, const char * argv[]) {
 //    colors();
     
     // 2.2
-    lighting();
+//    lighting();
+    
+    // 2.3
+    materials();
     
     return 0;
 }
