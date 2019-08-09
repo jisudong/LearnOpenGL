@@ -16,6 +16,7 @@
 #include "colors.hpp"
 #include "basic_lighting.hpp"
 #include "materials.hpp"
+#include "lighting_map.hpp"
 
 int main(int argc, const char * argv[]) {
     
@@ -54,7 +55,10 @@ int main(int argc, const char * argv[]) {
 //    lighting();
     
     // 2.3
-    materials();
+//    materials();
+    
+    // 2.4
+    lightingMaps();
     
     return 0;
 }

@@ -11,6 +11,7 @@
 		225CF07A22FC1894009F09AE /* colors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 225CF07922FC1894009F09AE /* colors.cpp */; };
 		225CF08322FC1AA6009F09AE /* basic_lighting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 225CF08222FC1AA6009F09AE /* basic_lighting.cpp */; };
 		225CF08C22FD6613009F09AE /* materials.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 225CF08A22FD6613009F09AE /* materials.cpp */; };
+		225CF09322FD67DB009F09AE /* lighting_map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 225CF09122FD67DB009F09AE /* lighting_map.cpp */; };
 		22A796DA22F53FE100B6221C /* stb_image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22A796D822F53FE100B6221C /* stb_image.cpp */; };
 		22A796DB22F53FE100B6221C /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 22A796D922F53FE100B6221C /* glad.c */; };
 		22A798B522F54A1500B6221C /* triangles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22A798B422F54A1500B6221C /* triangles.cpp */; };
@@ -59,6 +60,14 @@
 		225CF08E22FD6663009F09AE /* 3.1.lamp.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 3.1.lamp.vs; sourceTree = "<group>"; };
 		225CF08F22FD6663009F09AE /* 3.1.materials.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 3.1.materials.fs; sourceTree = "<group>"; };
 		225CF09022FD6663009F09AE /* 3.1.lamp.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 3.1.lamp.fs; sourceTree = "<group>"; };
+		225CF09122FD67DB009F09AE /* lighting_map.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = lighting_map.cpp; sourceTree = "<group>"; };
+		225CF09222FD67DB009F09AE /* lighting_map.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = lighting_map.hpp; sourceTree = "<group>"; };
+		225CF09422FD685F009F09AE /* 4.2.lighting_maps.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 4.2.lighting_maps.fs; sourceTree = "<group>"; };
+		225CF09522FD685F009F09AE /* 4.1.lighting_maps.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 4.1.lighting_maps.fs; sourceTree = "<group>"; };
+		225CF09622FD685F009F09AE /* 4.1.lighting_maps.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 4.1.lighting_maps.vs; sourceTree = "<group>"; };
+		225CF09722FD685F009F09AE /* 4.1.lamp.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 4.1.lamp.vs; sourceTree = "<group>"; };
+		225CF09822FD685F009F09AE /* 4.2.lighting_maps.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 4.2.lighting_maps.vs; sourceTree = "<group>"; };
+		225CF09922FD685F009F09AE /* 4.1.lamp.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 4.1.lamp.fs; sourceTree = "<group>"; };
 		22A796D022F53B9300B6221C /* libGLEW.2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libGLEW.2.1.0.dylib; sourceTree = "<group>"; };
 		22A796D222F53B9300B6221C /* libassimp.4.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libassimp.4.1.0.dylib; sourceTree = "<group>"; };
 		22A796D422F53B9400B6221C /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libglfw.3.3.dylib; sourceTree = "<group>"; };
@@ -169,6 +178,8 @@
 				225CF08222FC1AA6009F09AE /* basic_lighting.cpp */,
 				225CF08B22FD6613009F09AE /* materials.hpp */,
 				225CF08A22FD6613009F09AE /* materials.cpp */,
+				225CF09222FD67DB009F09AE /* lighting_map.hpp */,
+				225CF09122FD67DB009F09AE /* lighting_map.cpp */,
 			);
 			path = 2.lighting;
 			sourceTree = "<group>";
@@ -190,6 +201,12 @@
 				225CF08E22FD6663009F09AE /* 3.1.lamp.vs */,
 				225CF08F22FD6663009F09AE /* 3.1.materials.fs */,
 				225CF08D22FD6663009F09AE /* 3.1.materials.vs */,
+				225CF09922FD685F009F09AE /* 4.1.lamp.fs */,
+				225CF09722FD685F009F09AE /* 4.1.lamp.vs */,
+				225CF09522FD685F009F09AE /* 4.1.lighting_maps.fs */,
+				225CF09622FD685F009F09AE /* 4.1.lighting_maps.vs */,
+				225CF09422FD685F009F09AE /* 4.2.lighting_maps.fs */,
+				225CF09822FD685F009F09AE /* 4.2.lighting_maps.vs */,
 			);
 			path = 2.lighting;
 			sourceTree = "<group>";
@@ -411,6 +428,7 @@
 				22A798CA22F9311000B6221C /* transform.cpp in Sources */,
 				22A798BD22F7FAD300B6221C /* shader_c.cpp in Sources */,
 				22A796DA22F53FE100B6221C /* stb_image.cpp in Sources */,
+				225CF09322FD67DB009F09AE /* lighting_map.cpp in Sources */,
 				225CF08C22FD6613009F09AE /* materials.cpp in Sources */,
 				22A798D822FAAC6600B6221C /* camera_c.cpp in Sources */,
 				225CF07A22FC1894009F09AE /* colors.cpp in Sources */,
