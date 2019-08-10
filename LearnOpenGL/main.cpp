@@ -17,6 +17,7 @@
 #include "basic_lighting.hpp"
 #include "materials.hpp"
 #include "lighting_map.hpp"
+#include "light_casters.hpp"
 
 int main(int argc, const char * argv[]) {
     
@@ -58,7 +59,12 @@ int main(int argc, const char * argv[]) {
 //    materials();
     
     // 2.4
-    lightingMaps();
+//    lightingMaps();
+    
+    // 2.5
+//    parallel_light();
+//    attenuation();
+    spotlight();
     
     return 0;
 }
