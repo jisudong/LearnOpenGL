@@ -13,6 +13,7 @@
 		225CF08C22FD6613009F09AE /* materials.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 225CF08A22FD6613009F09AE /* materials.cpp */; };
 		225CF09322FD67DB009F09AE /* lighting_map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 225CF09122FD67DB009F09AE /* lighting_map.cpp */; };
 		225CF09C22FECC81009F09AE /* light_casters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 225CF09B22FECC81009F09AE /* light_casters.cpp */; };
+		225CF0A8230295B6009F09AE /* multiple_light.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 225CF0A7230295B6009F09AE /* multiple_light.cpp */; };
 		22A796DA22F53FE100B6221C /* stb_image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22A796D822F53FE100B6221C /* stb_image.cpp */; };
 		22A796DB22F53FE100B6221C /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 22A796D922F53FE100B6221C /* glad.c */; };
 		22A798B522F54A1500B6221C /* triangles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22A798B422F54A1500B6221C /* triangles.cpp */; };
@@ -80,6 +81,8 @@
 		225CF0A322FECD56009F09AE /* 5.1.light_casters.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 5.1.light_casters.vs; sourceTree = "<group>"; };
 		225CF0A422FECD56009F09AE /* 5.4.light_casters.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 5.4.light_casters.fs; sourceTree = "<group>"; };
 		225CF0A522FECD56009F09AE /* 5.2.light_casters.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 5.2.light_casters.fs; sourceTree = "<group>"; };
+		225CF0A6230295B6009F09AE /* multiple_light.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = multiple_light.hpp; sourceTree = "<group>"; };
+		225CF0A7230295B6009F09AE /* multiple_light.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = multiple_light.cpp; sourceTree = "<group>"; };
 		22A796D022F53B9300B6221C /* libGLEW.2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libGLEW.2.1.0.dylib; sourceTree = "<group>"; };
 		22A796D222F53B9300B6221C /* libassimp.4.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libassimp.4.1.0.dylib; sourceTree = "<group>"; };
 		22A796D422F53B9400B6221C /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libglfw.3.3.dylib; sourceTree = "<group>"; };
@@ -194,6 +197,8 @@
 				225CF09122FD67DB009F09AE /* lighting_map.cpp */,
 				225CF09A22FECC80009F09AE /* light_casters.hpp */,
 				225CF09B22FECC81009F09AE /* light_casters.cpp */,
+				225CF0A6230295B6009F09AE /* multiple_light.hpp */,
+				225CF0A7230295B6009F09AE /* multiple_light.cpp */,
 			);
 			path = 2.lighting;
 			sourceTree = "<group>";
@@ -458,6 +463,7 @@
 				225CF09C22FECC81009F09AE /* light_casters.cpp in Sources */,
 				22A798C322F816A400B6221C /* texture.cpp in Sources */,
 				22A796DB22F53FE100B6221C /* glad.c in Sources */,
+				225CF0A8230295B6009F09AE /* multiple_light.cpp in Sources */,
 				225CF08322FC1AA6009F09AE /* basic_lighting.cpp in Sources */,
 				22A798CD22F94F3C00B6221C /* coordinate_systems.cpp in Sources */,
 				22A798B522F54A1500B6221C /* triangles.cpp in Sources */,
