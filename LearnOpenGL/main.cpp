@@ -18,6 +18,7 @@
 #include "materials.hpp"
 #include "lighting_map.hpp"
 #include "light_casters.hpp"
+#include "multiple_light.hpp"
 
 int main(int argc, const char * argv[]) {
     
@@ -64,7 +65,10 @@ int main(int argc, const char * argv[]) {
     // 2.5
 //    parallel_light();
 //    attenuation();
-    spotlight();
+//    spotlight();
+    
+    // 2.6
+    multiple();
     
     return 0;
 }

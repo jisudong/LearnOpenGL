@@ -63,7 +63,7 @@ int multiple() {
     glEnable(GL_DEPTH_TEST);
     
     Shader lightingShader("./GLSL/2.lighting/6.1.multiple_light.vs", "./GLSL/2.lighting/6.1.multiple_light.fs");
-    Shader lampShader("./GLSL/2.lighting/4.1.lamp.vs", "./GLSL/2.lighting/4.1.lamp.fs");
+    Shader lampShader("./GLSL/2.lighting/6.1.lamp.vs", "./GLSL/2.lighting/6.1.lamp.fs");
     
     float vertices[] = {
         // positions          // normals           // texture coords
