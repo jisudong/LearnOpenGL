@@ -18,6 +18,7 @@
 #include <sstream>
 #include <iostream>
 #include <vector>
+using namespace std;
 
 struct Vertex {
     glm::vec3 Position;

@@ -19,6 +19,7 @@
 #include "lighting_map.hpp"
 #include "light_casters.hpp"
 #include "multiple_light.hpp"
+#include "model_loading.hpp"
 
 int main(int argc, const char * argv[]) {
     
@@ -68,7 +69,11 @@ int main(int argc, const char * argv[]) {
 //    spotlight();
     
     // 2.6
-    multiple();
+//    multiple();
+    
+    
+    // ---------------------- 3.model_loading ----------------------
+    model_load();
     
     return 0;
 }

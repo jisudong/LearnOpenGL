@@ -9,7 +9,7 @@
 #ifndef model_h
 #define model_h
 
-#include "mesh.hpp"
+#include "mesh.h"
 #include "stb_image.h"
 #include <assimp/Importer.hpp>
 #include <assimp/scene.h>
