@@ -15,6 +15,7 @@
 		225CF09C22FECC81009F09AE /* light_casters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 225CF09B22FECC81009F09AE /* light_casters.cpp */; };
 		225CF0A8230295B6009F09AE /* multiple_light.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 225CF0A7230295B6009F09AE /* multiple_light.cpp */; };
 		225CF0AF23041CD4009F09AE /* model_loading.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 225CF0AD23041CD4009F09AE /* model_loading.cpp */; };
+		225CF11E230649DE009F09AE /* depth_testing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 225CF11C230649DE009F09AE /* depth_testing.cpp */; };
 		22A796DA22F53FE100B6221C /* stb_image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22A796D822F53FE100B6221C /* stb_image.cpp */; };
 		22A796DB22F53FE100B6221C /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 22A796D922F53FE100B6221C /* glad.c */; };
 		22A798B522F54A1500B6221C /* triangles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22A798B422F54A1500B6221C /* triangles.cpp */; };
@@ -123,6 +124,10 @@
 		225CF0D223041EA4009F09AE /* back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = back.jpg; sourceTree = "<group>"; };
 		225CF0D323041EA4009F09AE /* front.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = front.jpg; sourceTree = "<group>"; };
 		225CF0D423041EA4009F09AE /* hand_dif.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hand_dif.png; sourceTree = "<group>"; };
+		225CF11C230649DE009F09AE /* depth_testing.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = depth_testing.cpp; sourceTree = "<group>"; };
+		225CF11D230649DE009F09AE /* depth_testing.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = depth_testing.hpp; sourceTree = "<group>"; };
+		225CF11F23065133009F09AE /* 1.depth_testing.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 1.depth_testing.vs; sourceTree = "<group>"; };
+		225CF12023065133009F09AE /* 1.depth_testing.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 1.depth_testing.fs; sourceTree = "<group>"; };
 		22A796D022F53B9300B6221C /* libGLEW.2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libGLEW.2.1.0.dylib; sourceTree = "<group>"; };
 		22A796D222F53B9300B6221C /* libassimp.4.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libassimp.4.1.0.dylib; sourceTree = "<group>"; };
 		22A796D422F53B9400B6221C /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libglfw.3.3.dylib; sourceTree = "<group>"; };
@@ -345,12 +350,31 @@
 			path = nanosuit;
 			sourceTree = "<group>";
 		};
+		225CF11A23064863009F09AE /* 4.advanced_opengl */ = {
+			isa = PBXGroup;
+			children = (
+				225CF11D230649DE009F09AE /* depth_testing.hpp */,
+				225CF11C230649DE009F09AE /* depth_testing.cpp */,
+			);
+			path = 4.advanced_opengl;
+			sourceTree = "<group>";
+		};
+		225CF11B23064893009F09AE /* 4.advanced_opengl */ = {
+			isa = PBXGroup;
+			children = (
+				225CF12023065133009F09AE /* 1.depth_testing.fs */,
+				225CF11F23065133009F09AE /* 1.depth_testing.vs */,
+			);
+			path = 4.advanced_opengl;
+			sourceTree = "<group>";
+		};
 		22A796CA22F52EEA00B6221C /* src */ = {
 			isa = PBXGroup;
 			children = (
 				22A7989822F5491F00B6221C /* 1.getting_started */,
 				225CF07622FC1814009F09AE /* 2.lighting */,
 				225CF0A923041B41009F09AE /* 3.model_loading */,
+				225CF11A23064863009F09AE /* 4.advanced_opengl */,
 				22A796D922F53FE100B6221C /* glad.c */,
 				22A796D822F53FE100B6221C /* stb_image.cpp */,
 			);
@@ -391,6 +415,7 @@
 				22A798BE22F8011D00B6221C /* 1.getting_started */,
 				225CF07722FC1839009F09AE /* 2.lighting */,
 				225CF0AA23041B61009F09AE /* 3.model_loading */,
+				225CF11B23064893009F09AE /* 4.advanced_opengl */,
 			);
 			path = GLSL;
 			sourceTree = "<group>";
@@ -576,6 +601,7 @@
 				22A798C322F816A400B6221C /* texture.cpp in Sources */,
 				22A796DB22F53FE100B6221C /* glad.c in Sources */,
 				225CF0A8230295B6009F09AE /* multiple_light.cpp in Sources */,
+				225CF11E230649DE009F09AE /* depth_testing.cpp in Sources */,
 				225CF08322FC1AA6009F09AE /* basic_lighting.cpp in Sources */,
 				22A798CD22F94F3C00B6221C /* coordinate_systems.cpp in Sources */,
 				22A798B522F54A1500B6221C /* triangles.cpp in Sources */,

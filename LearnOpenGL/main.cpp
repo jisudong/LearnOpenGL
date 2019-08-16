@@ -20,6 +20,7 @@
 #include "light_casters.hpp"
 #include "multiple_light.hpp"
 #include "model_loading.hpp"
+#include "depth_testing.hpp"
 
 int main(int argc, const char * argv[]) {
     
@@ -73,7 +74,12 @@ int main(int argc, const char * argv[]) {
     
     
     // ---------------------- 3.model_loading ----------------------
-    model_load();
+//    model_load();
+    
+    
+    // ---------------------- 4.advanced_opengl ----------------------
+    // 4.1
+    depth_test();
     
     return 0;
 }
