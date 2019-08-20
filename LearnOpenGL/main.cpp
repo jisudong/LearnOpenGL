@@ -21,6 +21,7 @@
 #include "multiple_light.hpp"
 #include "model_loading.hpp"
 #include "depth_testing.hpp"
+#include "stencil_testing.hpp"
 
 int main(int argc, const char * argv[]) {
     
@@ -79,7 +80,10 @@ int main(int argc, const char * argv[]) {
     
     // ---------------------- 4.advanced_opengl ----------------------
     // 4.1
-    depth_test();
+//    depth_test();
+    
+    // 4.2
+    stencil();
     
     return 0;
 }
