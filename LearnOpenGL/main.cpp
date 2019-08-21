@@ -22,6 +22,7 @@
 #include "model_loading.hpp"
 #include "depth_testing.hpp"
 #include "stencil_testing.hpp"
+#include "blending.hpp"
 
 int main(int argc, const char * argv[]) {
     
@@ -83,7 +84,10 @@ int main(int argc, const char * argv[]) {
 //    depth_test();
     
     // 4.2
-    stencil();
+//    stencil();
+    
+    // 4.3
+    discard();
     
     return 0;
 }
