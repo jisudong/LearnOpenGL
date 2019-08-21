@@ -10,5 +10,6 @@
 #define blending_hpp
 
 int discard();
+int blend();
 
 #endif /* blending_hpp */

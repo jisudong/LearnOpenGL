@@ -195,6 +195,7 @@
 		22C5A8E3230CE2E000E7707C /* blending.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = blending.hpp; sourceTree = "<group>"; };
 		22C5A8E5230CE40700E7707C /* 3.1.blending.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 3.1.blending.vs; sourceTree = "<group>"; };
 		22C5A8E6230CE40700E7707C /* 3.1.blending.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 3.1.blending.fs; sourceTree = "<group>"; };
+		22C5A8E7230CE46000E7707C /* 3.2.blending.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 3.2.blending.fs; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -384,6 +385,7 @@
 				22C5A8DF230C1AEF00E7707C /* 2.stencil_testing.vs */,
 				22C5A8E6230CE40700E7707C /* 3.1.blending.fs */,
 				22C5A8E5230CE40700E7707C /* 3.1.blending.vs */,
+				22C5A8E7230CE46000E7707C /* 3.2.blending.fs */,
 			);
 			path = 4.advanced_opengl;
 			sourceTree = "<group>";

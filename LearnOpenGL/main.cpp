@@ -87,7 +87,8 @@ int main(int argc, const char * argv[]) {
 //    stencil();
     
     // 4.3
-    discard();
+//    discard();
+    blend();
     
     return 0;
 }
