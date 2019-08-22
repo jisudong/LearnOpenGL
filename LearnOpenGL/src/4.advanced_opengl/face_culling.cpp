@@ -63,7 +63,7 @@ int facecull() {
     glCullFace(GL_BACK);
     glFrontFace(GL_CCW);
     
-    Shader shader("./GLSL/4.advanced_opengl/3.1.blending.vs", "./GLSL/4.advanced_opengl/3.2.blending.fs");
+    Shader shader("./GLSL/4.advanced_opengl/4.face_culling.vs", "./GLSL/4.advanced_opengl/4.face_culling.fs");
     
     float cubeVertices[] = {
         // Back face

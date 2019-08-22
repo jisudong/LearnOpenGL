@@ -199,6 +199,8 @@
 		22C5A8E7230CE46000E7707C /* 3.2.blending.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 3.2.blending.fs; sourceTree = "<group>"; };
 		22C5AA34230E99E600E7707C /* face_culling.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = face_culling.cpp; sourceTree = "<group>"; };
 		22C5AA35230E99E600E7707C /* face_culling.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = face_culling.hpp; sourceTree = "<group>"; };
+		22C5AA37230E9BC100E7707C /* 4.face_culling.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 4.face_culling.vs; sourceTree = "<group>"; };
+		22C5AA38230E9BC100E7707C /* 4.face_culling.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 4.face_culling.fs; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -391,6 +393,8 @@
 				22C5A8E6230CE40700E7707C /* 3.1.blending.fs */,
 				22C5A8E5230CE40700E7707C /* 3.1.blending.vs */,
 				22C5A8E7230CE46000E7707C /* 3.2.blending.fs */,
+				22C5AA38230E9BC100E7707C /* 4.face_culling.fs */,
+				22C5AA37230E9BC100E7707C /* 4.face_culling.vs */,
 			);
 			path = 4.advanced_opengl;
 			sourceTree = "<group>";
