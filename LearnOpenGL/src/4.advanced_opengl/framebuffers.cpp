@@ -61,8 +61,8 @@ int framebuffer() {
     
     glEnable(GL_DEPTH_TEST);
     
-    Shader shader("/Users/xiujianshen/Documents/GLSL/AdvancedOpenGL/5.1.framebuffer.vs", "/Users/xiujianshen/Documents/GLSL/AdvancedOpenGL/5.1.framebuffer.fs");
-    Shader screenShader("/Users/xiujianshen/Documents/GLSL/AdvancedOpenGL/5.1.framebuffer_screen.vs", "/Users/xiujianshen/Documents/GLSL/AdvancedOpenGL/5.1.framebuffer_screen.fs");
+    Shader shader("./GLSL/4.advanced_opengl/5.1.framebuffer.vs", "./GLSL/4.advanced_opengl/5.1.framebuffer.fs");
+    Shader screenShader("./GLSL/4.advanced_opengl/5.1.framebuffer_screen.vs", "./GLSL/4.advanced_opengl/5.1.framebuffer_screen.fs");
     
     float cubeVertices[] = {
         // positions          // texture Coords
@@ -162,8 +162,8 @@ int framebuffer() {
     glEnableVertexAttribArray(1);
     glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 4 * sizeof(float), (void *)(2 * sizeof(float)));
     
-    unsigned int cubeTexture = framebuffer_loadTexture("/Users/xiujianshen/Documents/resources/container.jpg");
-    unsigned int floorTexture = framebuffer_loadTexture("/Users/xiujianshen/Documents/resources/metal.png");
+    unsigned int cubeTexture = framebuffer_loadTexture("./resources/textures/container.jpg");
+    unsigned int floorTexture = framebuffer_loadTexture("./resources/textures/metal.png");
     
     shader.use();
     shader.setInt("texture1", 0);
