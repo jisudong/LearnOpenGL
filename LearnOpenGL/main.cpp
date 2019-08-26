@@ -23,6 +23,8 @@
 #include "depth_testing.hpp"
 #include "stencil_testing.hpp"
 #include "blending.hpp"
+#include "face_culling.hpp"
+#include "framebuffers.hpp"
 
 int main(int argc, const char * argv[]) {
     
@@ -88,7 +90,14 @@ int main(int argc, const char * argv[]) {
     
     // 4.3
 //    discard();
-    blend();
+//    blend();
+    
+    // 4.4
+//    facecull();
+    
+    // 4.5
+    framebuffer();
+    
     
     return 0;
 }

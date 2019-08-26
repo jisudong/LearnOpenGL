@@ -30,6 +30,7 @@
 		22C5A8DE230C1A5D00E7707C /* stencil_testing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22C5A8DC230C1A5D00E7707C /* stencil_testing.cpp */; };
 		22C5A8E4230CE2E000E7707C /* blending.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22C5A8E2230CE2E000E7707C /* blending.cpp */; };
 		22C5AA36230E99E600E7707C /* face_culling.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22C5AA34230E99E600E7707C /* face_culling.cpp */; };
+		22C5AA3D2313853100E7707C /* framebuffers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22C5AA3B2313853100E7707C /* framebuffers.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -201,6 +202,8 @@
 		22C5AA35230E99E600E7707C /* face_culling.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = face_culling.hpp; sourceTree = "<group>"; };
 		22C5AA37230E9BC100E7707C /* 4.face_culling.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 4.face_culling.vs; sourceTree = "<group>"; };
 		22C5AA38230E9BC100E7707C /* 4.face_culling.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 4.face_culling.fs; sourceTree = "<group>"; };
+		22C5AA3B2313853100E7707C /* framebuffers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = framebuffers.cpp; sourceTree = "<group>"; };
+		22C5AA3C2313853100E7707C /* framebuffers.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = framebuffers.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -378,6 +381,8 @@
 				22C5A8E2230CE2E000E7707C /* blending.cpp */,
 				22C5AA35230E99E600E7707C /* face_culling.hpp */,
 				22C5AA34230E99E600E7707C /* face_culling.cpp */,
+				22C5AA3C2313853100E7707C /* framebuffers.hpp */,
+				22C5AA3B2313853100E7707C /* framebuffers.cpp */,
 			);
 			path = 4.advanced_opengl;
 			sourceTree = "<group>";
@@ -625,6 +630,7 @@
 				22A798BD22F7FAD300B6221C /* shader_c.cpp in Sources */,
 				22A796DA22F53FE100B6221C /* stb_image.cpp in Sources */,
 				225CF09322FD67DB009F09AE /* lighting_map.cpp in Sources */,
+				22C5AA3D2313853100E7707C /* framebuffers.cpp in Sources */,
 				225CF08C22FD6613009F09AE /* materials.cpp in Sources */,
 				22C5A8DE230C1A5D00E7707C /* stencil_testing.cpp in Sources */,
 				22C5A8E4230CE2E000E7707C /* blending.cpp in Sources */,
