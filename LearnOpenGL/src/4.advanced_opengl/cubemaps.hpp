@@ -10,5 +10,6 @@
 #define cubemaps_hpp
 
 int skybox();
+int reflect();
 
 #endif /* cubemaps_hpp */

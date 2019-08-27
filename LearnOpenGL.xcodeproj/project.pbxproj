@@ -215,6 +215,8 @@
 		22C5AA462314FDE100E7707C /* 6.1.cubemaps.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 6.1.cubemaps.fs; sourceTree = "<group>"; };
 		22C5AA472314FDE100E7707C /* 6.1.skybox.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 6.1.skybox.fs; sourceTree = "<group>"; };
 		22C5AA482314FDE100E7707C /* 6.1.skybox.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 6.1.skybox.vs; sourceTree = "<group>"; };
+		22C5AA492314FF7200E7707C /* 6.2.cubemaps.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 6.2.cubemaps.fs; sourceTree = "<group>"; };
+		22C5AA4A2314FF7300E7707C /* 6.2.cubemaps.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 6.2.cubemaps.vs; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -421,6 +423,8 @@
 				22C5AA452314FDE100E7707C /* 6.1.cubemaps.vs */,
 				22C5AA472314FDE100E7707C /* 6.1.skybox.fs */,
 				22C5AA482314FDE100E7707C /* 6.1.skybox.vs */,
+				22C5AA492314FF7200E7707C /* 6.2.cubemaps.fs */,
+				22C5AA4A2314FF7300E7707C /* 6.2.cubemaps.vs */,
 			);
 			path = 4.advanced_opengl;
 			sourceTree = "<group>";

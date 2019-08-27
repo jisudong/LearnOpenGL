@@ -100,7 +100,8 @@ int main(int argc, const char * argv[]) {
 //    framebuffer();
     
     // 4.6
-    skybox();
+//    skybox();
+    reflect();
     
     return 0;
 }
