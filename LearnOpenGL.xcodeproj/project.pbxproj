@@ -31,6 +31,7 @@
 		22C5A8E4230CE2E000E7707C /* blending.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22C5A8E2230CE2E000E7707C /* blending.cpp */; };
 		22C5AA36230E99E600E7707C /* face_culling.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22C5AA34230E99E600E7707C /* face_culling.cpp */; };
 		22C5AA3D2313853100E7707C /* framebuffers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22C5AA3B2313853100E7707C /* framebuffers.cpp */; };
+		22C5AA442314FC9700E7707C /* cubemaps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22C5AA422314FC9700E7707C /* cubemaps.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -208,6 +209,12 @@
 		22C5AA3F2313865C00E7707C /* 5.1.framebuffer_screen.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 5.1.framebuffer_screen.vs; sourceTree = "<group>"; };
 		22C5AA402313865D00E7707C /* 5.1.framebuffer.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 5.1.framebuffer.vs; sourceTree = "<group>"; };
 		22C5AA412313865D00E7707C /* 5.1.framebuffer_screen.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 5.1.framebuffer_screen.fs; sourceTree = "<group>"; };
+		22C5AA422314FC9700E7707C /* cubemaps.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cubemaps.cpp; sourceTree = "<group>"; };
+		22C5AA432314FC9700E7707C /* cubemaps.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = cubemaps.hpp; sourceTree = "<group>"; };
+		22C5AA452314FDE100E7707C /* 6.1.cubemaps.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 6.1.cubemaps.vs; sourceTree = "<group>"; };
+		22C5AA462314FDE100E7707C /* 6.1.cubemaps.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 6.1.cubemaps.fs; sourceTree = "<group>"; };
+		22C5AA472314FDE100E7707C /* 6.1.skybox.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 6.1.skybox.fs; sourceTree = "<group>"; };
+		22C5AA482314FDE100E7707C /* 6.1.skybox.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 6.1.skybox.vs; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -387,6 +394,8 @@
 				22C5AA34230E99E600E7707C /* face_culling.cpp */,
 				22C5AA3C2313853100E7707C /* framebuffers.hpp */,
 				22C5AA3B2313853100E7707C /* framebuffers.cpp */,
+				22C5AA432314FC9700E7707C /* cubemaps.hpp */,
+				22C5AA422314FC9700E7707C /* cubemaps.cpp */,
 			);
 			path = 4.advanced_opengl;
 			sourceTree = "<group>";
@@ -408,6 +417,10 @@
 				22C5AA3F2313865C00E7707C /* 5.1.framebuffer_screen.vs */,
 				22C5AA3E2313865C00E7707C /* 5.1.framebuffer.fs */,
 				22C5AA402313865D00E7707C /* 5.1.framebuffer.vs */,
+				22C5AA462314FDE100E7707C /* 6.1.cubemaps.fs */,
+				22C5AA452314FDE100E7707C /* 6.1.cubemaps.vs */,
+				22C5AA472314FDE100E7707C /* 6.1.skybox.fs */,
+				22C5AA482314FDE100E7707C /* 6.1.skybox.vs */,
 			);
 			path = 4.advanced_opengl;
 			sourceTree = "<group>";
@@ -651,6 +664,7 @@
 				225CF0A8230295B6009F09AE /* multiple_light.cpp in Sources */,
 				225CF11E230649DE009F09AE /* depth_testing.cpp in Sources */,
 				225CF08322FC1AA6009F09AE /* basic_lighting.cpp in Sources */,
+				22C5AA442314FC9700E7707C /* cubemaps.cpp in Sources */,
 				22A798CD22F94F3C00B6221C /* coordinate_systems.cpp in Sources */,
 				22A798B522F54A1500B6221C /* triangles.cpp in Sources */,
 			);

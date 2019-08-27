@@ -25,6 +25,7 @@
 #include "blending.hpp"
 #include "face_culling.hpp"
 #include "framebuffers.hpp"
+#include "cubemaps.hpp"
 
 int main(int argc, const char * argv[]) {
     
@@ -96,8 +97,10 @@ int main(int argc, const char * argv[]) {
 //    facecull();
     
     // 4.5
-    framebuffer();
+//    framebuffer();
     
+    // 4.6
+    skybox();
     
     return 0;
 }
