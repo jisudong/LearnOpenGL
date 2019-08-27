@@ -11,5 +11,6 @@
 
 int skybox();
 int reflect();
+int refract();
 
 #endif /* cubemaps_hpp */

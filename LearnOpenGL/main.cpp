@@ -101,7 +101,8 @@ int main(int argc, const char * argv[]) {
     
     // 4.6
 //    skybox();
-    reflect();
+//    reflect();
+    refract();
     
     return 0;
 }
