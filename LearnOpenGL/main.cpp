@@ -26,6 +26,7 @@
 #include "face_culling.hpp"
 #include "framebuffers.hpp"
 #include "cubemaps.hpp"
+#include "advanced_glsl.hpp"
 
 int main(int argc, const char * argv[]) {
     
@@ -102,7 +103,10 @@ int main(int argc, const char * argv[]) {
     // 4.6
 //    skybox();
 //    reflect();
-    refract();
+//    refract();
+    
+    // 4.8
+    advancedGlsl();
     
     return 0;
 }
