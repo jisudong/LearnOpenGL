@@ -27,6 +27,7 @@
 #include "framebuffers.hpp"
 #include "cubemaps.hpp"
 #include "advanced_glsl.hpp"
+#include "geometry_shader.hpp"
 
 int main(int argc, const char * argv[]) {
     
@@ -106,7 +107,10 @@ int main(int argc, const char * argv[]) {
 //    refract();
     
     // 4.8
-    advancedGlsl();
+//    advancedGlsl();
+    
+    // 4.9
+    geometry();
     
     return 0;
 }

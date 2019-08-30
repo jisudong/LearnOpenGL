@@ -33,6 +33,7 @@
 		22C5AA3D2313853100E7707C /* framebuffers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22C5AA3B2313853100E7707C /* framebuffers.cpp */; };
 		22C5AA442314FC9700E7707C /* cubemaps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22C5AA422314FC9700E7707C /* cubemaps.cpp */; };
 		22C5AA6B2316256B00E7707C /* advanced_glsl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22C5AA692316256B00E7707C /* advanced_glsl.cpp */; };
+		22C5AA732319068900E7707C /* geometry_shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22C5AA712319068900E7707C /* geometry_shader.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -254,6 +255,11 @@
 		22C5AA6E231625E900E7707C /* 8.blue.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 8.blue.fs; sourceTree = "<group>"; };
 		22C5AA6F231625E900E7707C /* 8.green.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 8.green.fs; sourceTree = "<group>"; };
 		22C5AA70231625E900E7707C /* 8.yellow.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 8.yellow.fs; sourceTree = "<group>"; };
+		22C5AA712319068900E7707C /* geometry_shader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = geometry_shader.cpp; sourceTree = "<group>"; };
+		22C5AA722319068900E7707C /* geometry_shader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = geometry_shader.hpp; sourceTree = "<group>"; };
+		22C5AA742319074600E7707C /* 9.1.geometry.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 9.1.geometry.vs; sourceTree = "<group>"; };
+		22C5AA752319074600E7707C /* 9.1.geometry.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 9.1.geometry.fs; sourceTree = "<group>"; };
+		22C5AA762319074600E7707C /* 9.1.geometry.gs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 9.1.geometry.gs; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -438,6 +444,8 @@
 				22C5AA422314FC9700E7707C /* cubemaps.cpp */,
 				22C5AA6A2316256B00E7707C /* advanced_glsl.hpp */,
 				22C5AA692316256B00E7707C /* advanced_glsl.cpp */,
+				22C5AA722319068900E7707C /* geometry_shader.hpp */,
+				22C5AA712319068900E7707C /* geometry_shader.cpp */,
 			);
 			path = 4.advanced_opengl;
 			sourceTree = "<group>";
@@ -472,6 +480,9 @@
 				22C5AA6F231625E900E7707C /* 8.green.fs */,
 				22C5AA6C231625E900E7707C /* 8.red.fs */,
 				22C5AA70231625E900E7707C /* 8.yellow.fs */,
+				22C5AA752319074600E7707C /* 9.1.geometry.fs */,
+				22C5AA762319074600E7707C /* 9.1.geometry.gs */,
+				22C5AA742319074600E7707C /* 9.1.geometry.vs */,
 			);
 			path = 4.advanced_opengl;
 			sourceTree = "<group>";
@@ -744,6 +755,7 @@
 				22A798D822FAAC6600B6221C /* camera_c.cpp in Sources */,
 				225CF07A22FC1894009F09AE /* colors.cpp in Sources */,
 				22C5AA6B2316256B00E7707C /* advanced_glsl.cpp in Sources */,
+				22C5AA732319068900E7707C /* geometry_shader.cpp in Sources */,
 				225CF09C22FECC81009F09AE /* light_casters.cpp in Sources */,
 				22A798C322F816A400B6221C /* texture.cpp in Sources */,
 				22A796DB22F53FE100B6221C /* glad.c in Sources */,
