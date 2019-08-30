@@ -111,7 +111,8 @@ int main(int argc, const char * argv[]) {
     
     // 4.9
 //    geometry();
-    explode();
+//    explode();
+    normal_visualization();
     
     return 0;
 }

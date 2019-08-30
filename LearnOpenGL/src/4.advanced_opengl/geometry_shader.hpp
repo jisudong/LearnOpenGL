@@ -11,5 +11,6 @@
 
 int geometry();
 int explode();
+int normal_visualization();
 
 #endif /* geometry_shader_hpp */
