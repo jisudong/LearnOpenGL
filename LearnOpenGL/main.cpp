@@ -110,7 +110,8 @@ int main(int argc, const char * argv[]) {
 //    advancedGlsl();
     
     // 4.9
-    geometry();
+//    geometry();
+    explode();
     
     return 0;
 }

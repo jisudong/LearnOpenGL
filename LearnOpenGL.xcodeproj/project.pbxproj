@@ -260,6 +260,9 @@
 		22C5AA742319074600E7707C /* 9.1.geometry.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 9.1.geometry.vs; sourceTree = "<group>"; };
 		22C5AA752319074600E7707C /* 9.1.geometry.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 9.1.geometry.fs; sourceTree = "<group>"; };
 		22C5AA762319074600E7707C /* 9.1.geometry.gs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 9.1.geometry.gs; sourceTree = "<group>"; };
+		22C5AA772319085B00E7707C /* 9.2.geometry.gs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 9.2.geometry.gs; sourceTree = "<group>"; };
+		22C5AA782319085B00E7707C /* 9.2.geometry.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 9.2.geometry.fs; sourceTree = "<group>"; };
+		22C5AA792319085B00E7707C /* 9.2.geometry.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 9.2.geometry.vs; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -483,6 +486,9 @@
 				22C5AA752319074600E7707C /* 9.1.geometry.fs */,
 				22C5AA762319074600E7707C /* 9.1.geometry.gs */,
 				22C5AA742319074600E7707C /* 9.1.geometry.vs */,
+				22C5AA782319085B00E7707C /* 9.2.geometry.fs */,
+				22C5AA772319085B00E7707C /* 9.2.geometry.gs */,
+				22C5AA792319085B00E7707C /* 9.2.geometry.vs */,
 			);
 			path = 4.advanced_opengl;
 			sourceTree = "<group>";

@@ -97,6 +97,71 @@ int geometry() {
 }
 
 
+#pragma mark - 爆炸物体
+int explode() {
+    glfwInit();
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
+    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+#ifdef __APPLE__
+    glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, true);
+#endif
+    
+    GLFWwindow *window = glfwCreateWindow(GEOMETRY_SCR_WIDTH, GEOMETRY_SCR_HEIGHT, "LearnOpenGL", NULL, NULL);
+    if (window == NULL) {
+        glfwTerminate();
+        return -1;
+    }
+    glfwMakeContextCurrent(window);
+    glfwSetFramebufferSizeCallback(window, geometry_framebuffer_size_callback);
+    glfwSetCursorPosCallback(window, geometry_mouse_callback);
+    glfwSetScrollCallback(window, geometry_scroll_callback);
+    
+    glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+    
+    if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
+        return -1;
+    }
+    
+    glEnable(GL_DEPTH_TEST);
+    
+    Shader shader("./GLSL/4.advanced_opengl/9.2.geometry.vs", "./GLSL/4.advanced_opengl/9.2.geometry.fs", "./GLSL/4.advanced_opengl/9.2.geometry.gs");
+    
+    Model nanosuit("./resources/objects/nanosuit/nanosuit.obj");
+    
+    while (!glfwWindowShouldClose(window)) {
+        double currenFrame = glfwGetTime();
+        geometry_deltaTime = currenFrame - geometry_lastFrame;
+        geometry_lastFrame = currenFrame;
+        
+        geometry_processInput(window);
+        
+        glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+        
+        glm::mat4 projection = glm::perspective(glm::radians(geometry_camera.Zoom), (float)GEOMETRY_SCR_WIDTH / (float)GEOMETRY_SCR_HEIGHT, 0.1f, 100.0f);
+        glm::mat4 view = geometry_camera.getViewMatrix();
+        glm::mat4 model = glm::mat4(1.0f);
+        model = glm::scale(model, glm::vec3(0.1f));
+        
+        shader.use();
+        shader.setMat4("projection", projection);
+        shader.setMat4("view", view);
+        shader.setMat4("model", model);
+        
+        shader.setFloat("time", glfwGetTime());
+        
+        nanosuit.draw(shader);
+        
+        
+        glfwSwapBuffers(window);
+        glfwPollEvents();
+    }
+    glfwTerminate();
+    return 0;
+}
+
+
 void geometry_framebuffer_size_callback(GLFWwindow *window, int width, int height)
 {
     glViewport(0, 0, width, height);

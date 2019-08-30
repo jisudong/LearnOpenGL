@@ -10,5 +10,6 @@
 #define geometry_shader_hpp
 
 int geometry();
+int explode();
 
 #endif /* geometry_shader_hpp */
