@@ -10,5 +10,6 @@
 #define instancing_hpp
 
 int instanceArray();
+int planet();
 
 #endif /* instancing_hpp */

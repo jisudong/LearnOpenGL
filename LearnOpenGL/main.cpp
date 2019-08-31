@@ -116,7 +116,8 @@ int main(int argc, const char * argv[]) {
 //    normal_visualization();
     
     // 4.10
-    instanceArray();
+//    instanceArray();
+    planet();
     
     return 0;
 }

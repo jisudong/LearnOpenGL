@@ -272,6 +272,16 @@
 		22C5AA7F231A4B1800E7707C /* instancing.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = instancing.hpp; sourceTree = "<group>"; };
 		22C5AA81231A4BAD00E7707C /* 10.1.instancing.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 10.1.instancing.vs; sourceTree = "<group>"; };
 		22C5AA82231A4BAE00E7707C /* 10.1.instancing.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 10.1.instancing.fs; sourceTree = "<group>"; };
+		22C5AA83231A4CBF00E7707C /* 10.2.asteroids.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 10.2.asteroids.fs; sourceTree = "<group>"; };
+		22C5AA84231A4CBF00E7707C /* 10.2.asteroids.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 10.2.asteroids.vs; sourceTree = "<group>"; };
+		22C5AA85231A4CBF00E7707C /* 10.2.planet.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 10.2.planet.fs; sourceTree = "<group>"; };
+		22C5AA86231A4CBF00E7707C /* 10.2.planet.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 10.2.planet.vs; sourceTree = "<group>"; };
+		22C5AA88231A4CE400E7707C /* planet_Quom1200.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = planet_Quom1200.png; sourceTree = "<group>"; };
+		22C5AA89231A4CE400E7707C /* planet.obj */ = {isa = PBXFileReference; lastKnownFileType = text; path = planet.obj; sourceTree = "<group>"; };
+		22C5AA8A231A4CE400E7707C /* planet.mtl */ = {isa = PBXFileReference; lastKnownFileType = text; path = planet.mtl; sourceTree = "<group>"; };
+		22C5AA8C231A4CE400E7707C /* rock.obj */ = {isa = PBXFileReference; lastKnownFileType = text; path = rock.obj; sourceTree = "<group>"; };
+		22C5AA8D231A4CE400E7707C /* Rock-Texture-Surface.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Rock-Texture-Surface.jpg"; sourceTree = "<group>"; };
+		22C5AA8E231A4CE400E7707C /* rock.mtl */ = {isa = PBXFileReference; lastKnownFileType = text; path = rock.mtl; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -393,6 +403,8 @@
 		225CF0B223041E6F009F09AE /* objects */ = {
 			isa = PBXGroup;
 			children = (
+				22C5AA87231A4CE400E7707C /* planet */,
+				22C5AA8B231A4CE400E7707C /* rock */,
 				22C5AA4B2315007400E7707C /* nanosuit_reflection */,
 				225CF0B323041EA4009F09AE /* nanosuit */,
 			);
@@ -506,6 +518,10 @@
 				22C5AA7B2319090300E7707C /* 9.3.geometry.vs */,
 				22C5AA82231A4BAE00E7707C /* 10.1.instancing.fs */,
 				22C5AA81231A4BAD00E7707C /* 10.1.instancing.vs */,
+				22C5AA83231A4CBF00E7707C /* 10.2.asteroids.fs */,
+				22C5AA84231A4CBF00E7707C /* 10.2.asteroids.vs */,
+				22C5AA85231A4CBF00E7707C /* 10.2.planet.fs */,
+				22C5AA86231A4CBF00E7707C /* 10.2.planet.vs */,
 			);
 			path = 4.advanced_opengl;
 			sourceTree = "<group>";
@@ -706,6 +722,26 @@
 				22C5AA662315007400E7707C /* hand_dif.png */,
 			);
 			path = nanosuit_reflection;
+			sourceTree = "<group>";
+		};
+		22C5AA87231A4CE400E7707C /* planet */ = {
+			isa = PBXGroup;
+			children = (
+				22C5AA88231A4CE400E7707C /* planet_Quom1200.png */,
+				22C5AA89231A4CE400E7707C /* planet.obj */,
+				22C5AA8A231A4CE400E7707C /* planet.mtl */,
+			);
+			path = planet;
+			sourceTree = "<group>";
+		};
+		22C5AA8B231A4CE400E7707C /* rock */ = {
+			isa = PBXGroup;
+			children = (
+				22C5AA8C231A4CE400E7707C /* rock.obj */,
+				22C5AA8D231A4CE400E7707C /* Rock-Texture-Surface.jpg */,
+				22C5AA8E231A4CE400E7707C /* rock.mtl */,
+			);
+			path = rock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
