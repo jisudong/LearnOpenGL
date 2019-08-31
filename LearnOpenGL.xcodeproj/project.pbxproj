@@ -34,6 +34,7 @@
 		22C5AA442314FC9700E7707C /* cubemaps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22C5AA422314FC9700E7707C /* cubemaps.cpp */; };
 		22C5AA6B2316256B00E7707C /* advanced_glsl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22C5AA692316256B00E7707C /* advanced_glsl.cpp */; };
 		22C5AA732319068900E7707C /* geometry_shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22C5AA712319068900E7707C /* geometry_shader.cpp */; };
+		22C5AA80231A4B1800E7707C /* instancing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22C5AA7E231A4B1800E7707C /* instancing.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -267,6 +268,10 @@
 		22C5AA7B2319090300E7707C /* 9.3.geometry.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 9.3.geometry.vs; sourceTree = "<group>"; };
 		22C5AA7C2319090400E7707C /* 9.3.geometry.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 9.3.geometry.fs; sourceTree = "<group>"; };
 		22C5AA7D2319090400E7707C /* 9.3.default.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 9.3.default.vs; sourceTree = "<group>"; };
+		22C5AA7E231A4B1800E7707C /* instancing.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = instancing.cpp; sourceTree = "<group>"; };
+		22C5AA7F231A4B1800E7707C /* instancing.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = instancing.hpp; sourceTree = "<group>"; };
+		22C5AA81231A4BAD00E7707C /* 10.1.instancing.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 10.1.instancing.vs; sourceTree = "<group>"; };
+		22C5AA82231A4BAE00E7707C /* 10.1.instancing.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 10.1.instancing.fs; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -453,6 +458,8 @@
 				22C5AA692316256B00E7707C /* advanced_glsl.cpp */,
 				22C5AA722319068900E7707C /* geometry_shader.hpp */,
 				22C5AA712319068900E7707C /* geometry_shader.cpp */,
+				22C5AA7F231A4B1800E7707C /* instancing.hpp */,
+				22C5AA7E231A4B1800E7707C /* instancing.cpp */,
 			);
 			path = 4.advanced_opengl;
 			sourceTree = "<group>";
@@ -497,6 +504,8 @@
 				22C5AA7C2319090400E7707C /* 9.3.geometry.fs */,
 				22C5AA7A2319090300E7707C /* 9.3.geometry.gs */,
 				22C5AA7B2319090300E7707C /* 9.3.geometry.vs */,
+				22C5AA82231A4BAE00E7707C /* 10.1.instancing.fs */,
+				22C5AA81231A4BAD00E7707C /* 10.1.instancing.vs */,
 			);
 			path = 4.advanced_opengl;
 			sourceTree = "<group>";
@@ -775,6 +784,7 @@
 				22A796DB22F53FE100B6221C /* glad.c in Sources */,
 				225CF0A8230295B6009F09AE /* multiple_light.cpp in Sources */,
 				225CF11E230649DE009F09AE /* depth_testing.cpp in Sources */,
+				22C5AA80231A4B1800E7707C /* instancing.cpp in Sources */,
 				225CF08322FC1AA6009F09AE /* basic_lighting.cpp in Sources */,
 				22C5AA442314FC9700E7707C /* cubemaps.cpp in Sources */,
 				22A798CD22F94F3C00B6221C /* coordinate_systems.cpp in Sources */,

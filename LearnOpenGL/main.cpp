@@ -28,6 +28,7 @@
 #include "cubemaps.hpp"
 #include "advanced_glsl.hpp"
 #include "geometry_shader.hpp"
+#include "instancing.hpp"
 
 int main(int argc, const char * argv[]) {
     
@@ -112,7 +113,10 @@ int main(int argc, const char * argv[]) {
     // 4.9
 //    geometry();
 //    explode();
-    normal_visualization();
+//    normal_visualization();
+    
+    // 4.10
+    instanceArray();
     
     return 0;
 }
