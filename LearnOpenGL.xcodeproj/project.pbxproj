@@ -35,6 +35,7 @@
 		22C5AA6B2316256B00E7707C /* advanced_glsl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22C5AA692316256B00E7707C /* advanced_glsl.cpp */; };
 		22C5AA732319068900E7707C /* geometry_shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22C5AA712319068900E7707C /* geometry_shader.cpp */; };
 		22C5AA80231A4B1800E7707C /* instancing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22C5AA7E231A4B1800E7707C /* instancing.cpp */; };
+		22C5AB28231E392A00E7707C /* anti_aliasing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22C5AB26231E392A00E7707C /* anti_aliasing.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -282,6 +283,10 @@
 		22C5AA8C231A4CE400E7707C /* rock.obj */ = {isa = PBXFileReference; lastKnownFileType = text; path = rock.obj; sourceTree = "<group>"; };
 		22C5AA8D231A4CE400E7707C /* Rock-Texture-Surface.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Rock-Texture-Surface.jpg"; sourceTree = "<group>"; };
 		22C5AA8E231A4CE400E7707C /* rock.mtl */ = {isa = PBXFileReference; lastKnownFileType = text; path = rock.mtl; sourceTree = "<group>"; };
+		22C5AB26231E392A00E7707C /* anti_aliasing.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = anti_aliasing.cpp; sourceTree = "<group>"; };
+		22C5AB27231E392A00E7707C /* anti_aliasing.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = anti_aliasing.hpp; sourceTree = "<group>"; };
+		22C5AB29231E399400E7707C /* 11.1.MSAA.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 11.1.MSAA.vs; sourceTree = "<group>"; };
+		22C5AB2A231E399400E7707C /* 11.1.MSAA.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 11.1.MSAA.fs; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -472,6 +477,8 @@
 				22C5AA712319068900E7707C /* geometry_shader.cpp */,
 				22C5AA7F231A4B1800E7707C /* instancing.hpp */,
 				22C5AA7E231A4B1800E7707C /* instancing.cpp */,
+				22C5AB27231E392A00E7707C /* anti_aliasing.hpp */,
+				22C5AB26231E392A00E7707C /* anti_aliasing.cpp */,
 			);
 			path = 4.advanced_opengl;
 			sourceTree = "<group>";
@@ -522,6 +529,8 @@
 				22C5AA84231A4CBF00E7707C /* 10.2.asteroids.vs */,
 				22C5AA85231A4CBF00E7707C /* 10.2.planet.fs */,
 				22C5AA86231A4CBF00E7707C /* 10.2.planet.vs */,
+				22C5AB2A231E399400E7707C /* 11.1.MSAA.fs */,
+				22C5AB29231E399400E7707C /* 11.1.MSAA.vs */,
 			);
 			path = 4.advanced_opengl;
 			sourceTree = "<group>";
@@ -809,6 +818,7 @@
 				22C5AA3D2313853100E7707C /* framebuffers.cpp in Sources */,
 				225CF08C22FD6613009F09AE /* materials.cpp in Sources */,
 				22C5A8DE230C1A5D00E7707C /* stencil_testing.cpp in Sources */,
+				22C5AB28231E392A00E7707C /* anti_aliasing.cpp in Sources */,
 				22C5A8E4230CE2E000E7707C /* blending.cpp in Sources */,
 				22C5AA36230E99E600E7707C /* face_culling.cpp in Sources */,
 				22A798D822FAAC6600B6221C /* camera_c.cpp in Sources */,

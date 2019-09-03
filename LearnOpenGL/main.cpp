@@ -29,6 +29,7 @@
 #include "advanced_glsl.hpp"
 #include "geometry_shader.hpp"
 #include "instancing.hpp"
+#include "anti_aliasing.hpp"
 
 int main(int argc, const char * argv[]) {
     
@@ -117,7 +118,10 @@ int main(int argc, const char * argv[]) {
     
     // 4.10
 //    instanceArray();
-    planet();
+//    planet();
+    
+    // 4.11
+    MSAA();
     
     return 0;
 }
