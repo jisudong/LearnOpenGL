@@ -140,6 +140,8 @@
 		225CF12023065133009F09AE /* 1.depth_testing.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 1.depth_testing.fs; sourceTree = "<group>"; };
 		2294F34C233B6E9400A14FC3 /* advanced_lighting.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = advanced_lighting.cpp; sourceTree = "<group>"; };
 		2294F34D233B6E9400A14FC3 /* advanced_lighting.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = advanced_lighting.hpp; sourceTree = "<group>"; };
+		2294F350233B6FA300A14FC3 /* 1.advanced_lighting.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 1.advanced_lighting.fs; sourceTree = "<group>"; };
+		2294F351233B6FA300A14FC3 /* 1.advanced_lighting.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 1.advanced_lighting.vs; sourceTree = "<group>"; };
 		22A796D022F53B9300B6221C /* libGLEW.2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libGLEW.2.1.0.dylib; sourceTree = "<group>"; };
 		22A796D222F53B9300B6221C /* libassimp.4.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libassimp.4.1.0.dylib; sourceTree = "<group>"; };
 		22A796D422F53B9400B6221C /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libglfw.3.3.dylib; sourceTree = "<group>"; };
@@ -547,6 +549,15 @@
 			path = 5.advanced_lighting;
 			sourceTree = "<group>";
 		};
+		2294F34F233B6F8800A14FC3 /* 5.advanced_lighting */ = {
+			isa = PBXGroup;
+			children = (
+				2294F350233B6FA300A14FC3 /* 1.advanced_lighting.fs */,
+				2294F351233B6FA300A14FC3 /* 1.advanced_lighting.vs */,
+			);
+			path = 5.advanced_lighting;
+			sourceTree = "<group>";
+		};
 		22A796CA22F52EEA00B6221C /* src */ = {
 			isa = PBXGroup;
 			children = (
@@ -596,6 +607,7 @@
 				225CF07722FC1839009F09AE /* 2.lighting */,
 				225CF0AA23041B61009F09AE /* 3.model_loading */,
 				225CF11B23064893009F09AE /* 4.advanced_opengl */,
+				2294F34F233B6F8800A14FC3 /* 5.advanced_lighting */,
 			);
 			path = GLSL;
 			sourceTree = "<group>";

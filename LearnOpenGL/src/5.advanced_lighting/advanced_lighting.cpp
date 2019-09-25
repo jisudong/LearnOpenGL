@@ -66,7 +66,7 @@ int blinnPhong() {
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
     
-    Shader shader("/Users/xiujianshen/Documents/GLSL/AdvancedLighting/1.advanced_lighting.vs", "/Users/xiujianshen/Documents/GLSL/AdvancedLighting/1.advanced_lighting.fs");
+    Shader shader("./GLSL/5.advanced_lighting/1.advanced_lighting.vs", "./GLSL/5.advanced_lighting/1.advanced_lighting.fs");
     
     float planeVertices[] = {
         // positions            // normals         // texcoords
@@ -93,7 +93,7 @@ int blinnPhong() {
     glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void *)(6 * sizeof(float)));
     glBindVertexArray(0);
     
-    unsigned int floorTexture = al_loadTexture("/Users/xiujianshen/Documents/resources/wood.png");
+    unsigned int floorTexture = al_loadTexture("./resources/textures/wood.png");
     
     shader.use();
     shader.setInt("texture1", 0);
