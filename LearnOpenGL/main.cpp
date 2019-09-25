@@ -30,6 +30,7 @@
 #include "geometry_shader.hpp"
 #include "instancing.hpp"
 #include "anti_aliasing.hpp"
+#include "advanced_lighting.hpp"
 
 int main(int argc, const char * argv[]) {
     
@@ -121,7 +122,12 @@ int main(int argc, const char * argv[]) {
 //    planet();
     
     // 4.11
-    MSAA();
+//    MSAA();
+    
+    
+    // ---------------------- 5.advanced_lighting ----------------------
+    // 5.1
+    blinnPhong();
     
     return 0;
 }

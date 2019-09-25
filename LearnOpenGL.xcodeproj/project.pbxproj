@@ -16,6 +16,7 @@
 		225CF0A8230295B6009F09AE /* multiple_light.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 225CF0A7230295B6009F09AE /* multiple_light.cpp */; };
 		225CF0AF23041CD4009F09AE /* model_loading.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 225CF0AD23041CD4009F09AE /* model_loading.cpp */; };
 		225CF11E230649DE009F09AE /* depth_testing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 225CF11C230649DE009F09AE /* depth_testing.cpp */; };
+		2294F34E233B6E9400A14FC3 /* advanced_lighting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2294F34C233B6E9400A14FC3 /* advanced_lighting.cpp */; };
 		22A796DA22F53FE100B6221C /* stb_image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22A796D822F53FE100B6221C /* stb_image.cpp */; };
 		22A796DB22F53FE100B6221C /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 22A796D922F53FE100B6221C /* glad.c */; };
 		22A798B522F54A1500B6221C /* triangles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22A798B422F54A1500B6221C /* triangles.cpp */; };
@@ -137,6 +138,8 @@
 		225CF11D230649DE009F09AE /* depth_testing.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = depth_testing.hpp; sourceTree = "<group>"; };
 		225CF11F23065133009F09AE /* 1.depth_testing.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 1.depth_testing.vs; sourceTree = "<group>"; };
 		225CF12023065133009F09AE /* 1.depth_testing.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 1.depth_testing.fs; sourceTree = "<group>"; };
+		2294F34C233B6E9400A14FC3 /* advanced_lighting.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = advanced_lighting.cpp; sourceTree = "<group>"; };
+		2294F34D233B6E9400A14FC3 /* advanced_lighting.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = advanced_lighting.hpp; sourceTree = "<group>"; };
 		22A796D022F53B9300B6221C /* libGLEW.2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libGLEW.2.1.0.dylib; sourceTree = "<group>"; };
 		22A796D222F53B9300B6221C /* libassimp.4.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libassimp.4.1.0.dylib; sourceTree = "<group>"; };
 		22A796D422F53B9400B6221C /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libglfw.3.3.dylib; sourceTree = "<group>"; };
@@ -535,6 +538,15 @@
 			path = 4.advanced_opengl;
 			sourceTree = "<group>";
 		};
+		2294F34B233B6E5200A14FC3 /* 5.advanced_lighting */ = {
+			isa = PBXGroup;
+			children = (
+				2294F34D233B6E9400A14FC3 /* advanced_lighting.hpp */,
+				2294F34C233B6E9400A14FC3 /* advanced_lighting.cpp */,
+			);
+			path = 5.advanced_lighting;
+			sourceTree = "<group>";
+		};
 		22A796CA22F52EEA00B6221C /* src */ = {
 			isa = PBXGroup;
 			children = (
@@ -542,6 +554,7 @@
 				225CF07622FC1814009F09AE /* 2.lighting */,
 				225CF0A923041B41009F09AE /* 3.model_loading */,
 				225CF11A23064863009F09AE /* 4.advanced_opengl */,
+				2294F34B233B6E5200A14FC3 /* 5.advanced_lighting */,
 				22A796D922F53FE100B6221C /* glad.c */,
 				22A796D822F53FE100B6221C /* stb_image.cpp */,
 			);
@@ -820,6 +833,7 @@
 				22C5A8DE230C1A5D00E7707C /* stencil_testing.cpp in Sources */,
 				22C5AB28231E392A00E7707C /* anti_aliasing.cpp in Sources */,
 				22C5A8E4230CE2E000E7707C /* blending.cpp in Sources */,
+				2294F34E233B6E9400A14FC3 /* advanced_lighting.cpp in Sources */,
 				22C5AA36230E99E600E7707C /* face_culling.cpp in Sources */,
 				22A798D822FAAC6600B6221C /* camera_c.cpp in Sources */,
 				225CF07A22FC1894009F09AE /* colors.cpp in Sources */,
