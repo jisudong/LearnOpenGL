@@ -39,6 +39,8 @@
 		156E638C2455796400CF04A0 /* GLTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTools.h; sourceTree = "<group>"; };
 		156E638D2455797800CF04A0 /* libGLTools.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGLTools.a; sourceTree = "<group>"; };
 		156E638F24557C7200CF04A0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		156E639524558B9000CF04A0 /* triangle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = triangle.h; sourceTree = "<group>"; };
+		156E639824558D8900CF04A0 /* rectangle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rectangle.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				156E637D2455796400CF04A0 /* include */,
+				156E63912455890200CF04A0 /* src */,
 				156E636A245578A500CF04A0 /* Assets.xcassets */,
 				156E636C245578A500CF04A0 /* MainMenu.xib */,
 				156E636F245578A500CF04A0 /* Info.plist */,
@@ -122,6 +125,23 @@
 				156E638B2455796400CF04A0 /* glew.h */,
 			);
 			path = GL;
+			sourceTree = "<group>";
+		};
+		156E63912455890200CF04A0 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				156E639224558B4700CF04A0 /* 1 */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		156E639224558B4700CF04A0 /* 1 */ = {
+			isa = PBXGroup;
+			children = (
+				156E639524558B9000CF04A0 /* triangle.h */,
+				156E639824558D8900CF04A0 /* rectangle.h */,
+			);
+			path = 1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
