@@ -9,6 +9,8 @@
 #include <stdio.h>
 #include "triangle.h"
 #include "rectangle.h"
+#include "graph.h"
+
 
 
 int main(int argc,char *argv[])
@@ -16,7 +18,9 @@ int main(int argc,char *argv[])
     
 //    drawTriangle(argc, argv);
     
-    drawRectangle(argc, argv);
+//    drawRectangle(argc, argv);
+    
+    drawGraph(argc, argv);
     
     return 0;
 }

@@ -41,6 +41,7 @@
 		156E638F24557C7200CF04A0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		156E639524558B9000CF04A0 /* triangle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = triangle.h; sourceTree = "<group>"; };
 		156E639824558D8900CF04A0 /* rectangle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rectangle.h; sourceTree = "<group>"; };
+		156E639A24559D5900CF04A0 /* graph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = graph.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +141,7 @@
 			children = (
 				156E639524558B9000CF04A0 /* triangle.h */,
 				156E639824558D8900CF04A0 /* rectangle.h */,
+				156E639A24559D5900CF04A0 /* graph.h */,
 			);
 			path = 1;
 			sourceTree = "<group>";
