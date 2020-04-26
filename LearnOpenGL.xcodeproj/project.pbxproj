@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		156E63492455737D00CF04A0 /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 156E63482455737D00CF04A0 /* libGLEW.2.1.0.dylib */; };
+		156E634B2455743D00CF04A0 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 156E634A2455743D00CF04A0 /* libglfw.3.3.dylib */; };
+		156E635A2455765500CF04A0 /* libassimp.5.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 156E63552455764100CF04A0 /* libassimp.5.0.0.dylib */; };
 		2215150C22F4509000FD5D4F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2215150B22F4509000FD5D4F /* main.cpp */; };
 		225CF07A22FC1894009F09AE /* colors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 225CF07922FC1894009F09AE /* colors.cpp */; };
 		225CF08322FC1AA6009F09AE /* basic_lighting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 225CF08222FC1AA6009F09AE /* basic_lighting.cpp */; };
@@ -20,9 +23,6 @@
 		22A796DA22F53FE100B6221C /* stb_image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22A796D822F53FE100B6221C /* stb_image.cpp */; };
 		22A796DB22F53FE100B6221C /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 22A796D922F53FE100B6221C /* glad.c */; };
 		22A798B522F54A1500B6221C /* triangles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22A798B422F54A1500B6221C /* triangles.cpp */; };
-		22A798B722F54AA300B6221C /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A796D422F53B9400B6221C /* libglfw.3.3.dylib */; };
-		22A798B822F54AA700B6221C /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A796D022F53B9300B6221C /* libGLEW.2.1.0.dylib */; };
-		22A798B922F54AAA00B6221C /* libassimp.4.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A796D222F53B9300B6221C /* libassimp.4.1.0.dylib */; };
 		22A798BD22F7FAD300B6221C /* shader_c.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22A798BB22F7FAD300B6221C /* shader_c.cpp */; };
 		22A798C322F816A400B6221C /* texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22A798C122F816A400B6221C /* texture.cpp */; };
 		22A798CA22F9311000B6221C /* transform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22A798C922F9311000B6221C /* transform.cpp */; };
@@ -52,6 +52,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		156E63482455737D00CF04A0 /* libGLEW.2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.1.0.dylib; path = LearnOpenGL/lib/glew/libGLEW.2.1.0.dylib; sourceTree = "<group>"; };
+		156E634A2455743D00CF04A0 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = LearnOpenGL/lib/glfw/libglfw.3.3.dylib; sourceTree = "<group>"; };
+		156E63552455764100CF04A0 /* libassimp.5.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libassimp.5.0.0.dylib; sourceTree = "<group>"; };
+		156E63572455764100CF04A0 /* libGLEW.2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libGLEW.2.1.0.dylib; sourceTree = "<group>"; };
+		156E63592455764100CF04A0 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libglfw.3.3.dylib; sourceTree = "<group>"; };
 		2215150822F4509000FD5D4F /* LearnOpenGL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LearnOpenGL; sourceTree = BUILT_PRODUCTS_DIR; };
 		2215150B22F4509000FD5D4F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		225CF07822FC1894009F09AE /* colors.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = colors.hpp; sourceTree = "<group>"; };
@@ -142,9 +147,6 @@
 		2294F34D233B6E9400A14FC3 /* advanced_lighting.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = advanced_lighting.hpp; sourceTree = "<group>"; };
 		2294F350233B6FA300A14FC3 /* 1.advanced_lighting.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 1.advanced_lighting.fs; sourceTree = "<group>"; };
 		2294F351233B6FA300A14FC3 /* 1.advanced_lighting.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 1.advanced_lighting.vs; sourceTree = "<group>"; };
-		22A796D022F53B9300B6221C /* libGLEW.2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libGLEW.2.1.0.dylib; sourceTree = "<group>"; };
-		22A796D222F53B9300B6221C /* libassimp.4.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libassimp.4.1.0.dylib; sourceTree = "<group>"; };
-		22A796D422F53B9400B6221C /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libglfw.3.3.dylib; sourceTree = "<group>"; };
 		22A796D822F53FE100B6221C /* stb_image.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stb_image.cpp; sourceTree = "<group>"; };
 		22A796D922F53FE100B6221C /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glad.c; sourceTree = "<group>"; };
 		22A796DE22F5402C00B6221C /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
@@ -299,20 +301,64 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22A798B822F54AA700B6221C /* libGLEW.2.1.0.dylib in Frameworks */,
-				22A798B722F54AA300B6221C /* libglfw.3.3.dylib in Frameworks */,
-				22A798B922F54AAA00B6221C /* libassimp.4.1.0.dylib in Frameworks */,
+				156E635A2455765500CF04A0 /* libassimp.5.0.0.dylib in Frameworks */,
+				156E634B2455743D00CF04A0 /* libglfw.3.3.dylib in Frameworks */,
+				156E63492455737D00CF04A0 /* libGLEW.2.1.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		156E63472455737D00CF04A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				156E634A2455743D00CF04A0 /* libglfw.3.3.dylib */,
+				156E63482455737D00CF04A0 /* libGLEW.2.1.0.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		156E63532455764100CF04A0 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				156E63542455764100CF04A0 /* assimp */,
+				156E63562455764100CF04A0 /* glew */,
+				156E63582455764100CF04A0 /* glfw */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		156E63542455764100CF04A0 /* assimp */ = {
+			isa = PBXGroup;
+			children = (
+				156E63552455764100CF04A0 /* libassimp.5.0.0.dylib */,
+			);
+			path = assimp;
+			sourceTree = "<group>";
+		};
+		156E63562455764100CF04A0 /* glew */ = {
+			isa = PBXGroup;
+			children = (
+				156E63572455764100CF04A0 /* libGLEW.2.1.0.dylib */,
+			);
+			path = glew;
+			sourceTree = "<group>";
+		};
+		156E63582455764100CF04A0 /* glfw */ = {
+			isa = PBXGroup;
+			children = (
+				156E63592455764100CF04A0 /* libglfw.3.3.dylib */,
+			);
+			path = glfw;
+			sourceTree = "<group>";
+		};
 		221514FF22F4509000FD5D4F = {
 			isa = PBXGroup;
 			children = (
 				2215150A22F4509000FD5D4F /* LearnOpenGL */,
 				2215150922F4509000FD5D4F /* Products */,
+				156E63472455737D00CF04A0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -332,7 +378,7 @@
 				22A796CD22F5360400B6221C /* resources */,
 				22A796CA22F52EEA00B6221C /* src */,
 				22A796CB22F52F1C00B6221C /* includes */,
-				22A796CC22F535B400B6221C /* lib */,
+				156E63532455764100CF04A0 /* lib */,
 			);
 			path = LearnOpenGL;
 			sourceTree = "<group>";
@@ -581,16 +627,6 @@
 			path = includes;
 			sourceTree = "<group>";
 		};
-		22A796CC22F535B400B6221C /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				22A796D122F53B9300B6221C /* assimp */,
-				22A796CF22F53B9300B6221C /* glew */,
-				22A796D322F53B9400B6221C /* glfw */,
-			);
-			path = lib;
-			sourceTree = "<group>";
-		};
 		22A796CD22F5360400B6221C /* resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -610,30 +646,6 @@
 				2294F34F233B6F8800A14FC3 /* 5.advanced_lighting */,
 			);
 			path = GLSL;
-			sourceTree = "<group>";
-		};
-		22A796CF22F53B9300B6221C /* glew */ = {
-			isa = PBXGroup;
-			children = (
-				22A796D022F53B9300B6221C /* libGLEW.2.1.0.dylib */,
-			);
-			path = glew;
-			sourceTree = "<group>";
-		};
-		22A796D122F53B9300B6221C /* assimp */ = {
-			isa = PBXGroup;
-			children = (
-				22A796D222F53B9300B6221C /* libassimp.4.1.0.dylib */,
-			);
-			path = assimp;
-			sourceTree = "<group>";
-		};
-		22A796D322F53B9400B6221C /* glfw */ = {
-			isa = PBXGroup;
-			children = (
-				22A796D422F53B9400B6221C /* libglfw.3.3.dylib */,
-			);
-			path = glfw;
 			sourceTree = "<group>";
 		};
 		22A796DF22F5402C00B6221C /* learnopengl */ = {
