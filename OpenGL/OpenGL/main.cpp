@@ -10,6 +10,7 @@
 #include "triangle.h"
 #include "rectangle.h"
 #include "graph.h"
+#include "primitive.h"
 
 
 
@@ -20,7 +21,9 @@ int main(int argc,char *argv[])
     
 //    drawRectangle(argc, argv);
     
-    drawGraph(argc, argv);
+//    drawGraph(argc, argv);
+    
+    primitive(argc, argv);
     
     return 0;
 }
