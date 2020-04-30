@@ -12,12 +12,10 @@
 #include "graph.h"
 #include "primitive.h"
 #include "skill.h"
-
-
+#include "scissor.h"
 
 int main(int argc,char *argv[])
 {
-    
 //    drawTriangle(argc, argv);
     
 //    drawRectangle(argc, argv);
@@ -26,7 +24,9 @@ int main(int argc,char *argv[])
     
 //    primitive(argc, argv);
     
-    skill(argc, argv);
+//    skill(argc, argv);
+    
+    scissor(argc, argv);
     
     return 0;
 }
