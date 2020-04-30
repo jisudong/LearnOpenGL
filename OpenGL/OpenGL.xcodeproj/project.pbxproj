@@ -17,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		15264DF62458373800F16ECF /* primitive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = primitive.h; sourceTree = "<group>"; };
+		15264DF8245A844400F16ECF /* skill.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = skill.h; sourceTree = "<group>"; };
 		156E6364245578A300CF04A0 /* OpenGL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenGL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		156E636A245578A500CF04A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		156E636D245578A500CF04A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -65,6 +66,14 @@
 				15264DF62458373800F16ECF /* primitive.h */,
 			);
 			path = 2;
+			sourceTree = "<group>";
+		};
+		15264DF7245A7A4D00F16ECF /* 3 */ = {
+			isa = PBXGroup;
+			children = (
+				15264DF8245A844400F16ECF /* skill.h */,
+			);
+			path = 3;
 			sourceTree = "<group>";
 		};
 		156E635B245578A300CF04A0 = {
@@ -142,6 +151,7 @@
 			children = (
 				156E639224558B4700CF04A0 /* 1 */,
 				15264DF52458371000F16ECF /* 2 */,
+				15264DF7245A7A4D00F16ECF /* 3 */,
 			);
 			path = src;
 			sourceTree = "<group>";

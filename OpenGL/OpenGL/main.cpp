@@ -11,6 +11,7 @@
 #include "rectangle.h"
 #include "graph.h"
 #include "primitive.h"
+#include "skill.h"
 
 
 
@@ -23,7 +24,9 @@ int main(int argc,char *argv[])
     
 //    drawGraph(argc, argv);
     
-    primitive(argc, argv);
+//    primitive(argc, argv);
+    
+    skill(argc, argv);
     
     return 0;
 }
