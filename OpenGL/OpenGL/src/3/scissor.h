@@ -9,7 +9,6 @@
 #ifndef scissor_h
 #define scissor_h
 
-#include <math.h>
 #ifdef __APPLE__
 #include <glut/glut.h>
 #else

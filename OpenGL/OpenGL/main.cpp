@@ -13,9 +13,11 @@
 #include "primitive.h"
 #include "skill.h"
 #include "scissor.h"
+#include "blend.h"
 
 int main(int argc,char *argv[])
 {
+    
 //    drawTriangle(argc, argv);
     
 //    drawRectangle(argc, argv);
@@ -26,7 +28,9 @@ int main(int argc,char *argv[])
     
 //    skill(argc, argv);
     
-    scissor(argc, argv);
+//    scissor(argc, argv);
+    
+    blend(argc, argv);
     
     return 0;
 }
