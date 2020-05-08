@@ -63,7 +63,9 @@ void setupRC()
     glEnable(GL_DEPTH_TEST);
     //设置变换管线以使用两个矩阵堆栈
     pri_transformPipeline.SetMatrixStacks(pri_modelViewMatrix, pri_projectionMatrix);
-    pri_cameraFrame.MoveForward(-15.0f);
+    //下面2种方式的效果一样
+//    pri_cameraFrame.MoveForward(-15.0f);
+    pri_objectFrame.MoveForward(15.0f);
     
     GLfloat vCoast[9] = {
         3, 3, 0, 0, 3, 0, 3, 0, 0
@@ -214,20 +216,23 @@ void renderScene()
 {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
     
-    // 压栈
-    pri_modelViewMatrix.PushMatrix();
-    M3DMatrix44f mCamera;
-    pri_cameraFrame.GetCameraMatrix(mCamera);
+//    // 压栈
+//    pri_modelViewMatrix.PushMatrix();
+//    M3DMatrix44f mCamera;
+//    pri_cameraFrame.GetCameraMatrix(mCamera);
+//
+//    //矩阵乘以矩阵堆栈的顶部矩阵，相乘的结果随后简存储在堆栈的顶部
+//    pri_modelViewMatrix.MultMatrix(mCamera);
+//
+//    M3DMatrix44f mObjectFrame;
+//    //只要使用 GetMatrix 函数就可以获取矩阵堆栈顶部的值，这个函数可以进行2次重载。用来使用GLShaderManager 的使用。或者是获取顶部矩阵的顶点副本数据
+//    pri_objectFrame.GetMatrix(mObjectFrame);
+//
+//    //矩阵乘以矩阵堆栈的顶部矩阵，相乘的结果随后简存储在堆栈的顶部
+//    pri_modelViewMatrix.MultMatrix(mObjectFrame);
     
-    //矩阵乘以矩阵堆栈的顶部矩阵，相乘的结果随后简存储在堆栈的顶部
-    pri_modelViewMatrix.MultMatrix(mCamera);
-    
-    M3DMatrix44f mObjectFrame;
-    //只要使用 GetMatrix 函数就可以获取矩阵堆栈顶部的值，这个函数可以进行2次重载。用来使用GLShaderManager 的使用。或者是获取顶部矩阵的顶点副本数据
-    pri_objectFrame.GetMatrix(mObjectFrame);
-    
-    //矩阵乘以矩阵堆栈的顶部矩阵，相乘的结果随后简存储在堆栈的顶部
-    pri_modelViewMatrix.MultMatrix(mObjectFrame);
+    //跟上面注释代码效果一样
+    pri_modelViewMatrix.PushMatrix(pri_objectFrame);
     
     pri_shaderManager.UseStockShader(GLT_SHADER_FLAT, pri_transformPipeline.GetModelViewProjectionMatrix(), vBlack);
     
