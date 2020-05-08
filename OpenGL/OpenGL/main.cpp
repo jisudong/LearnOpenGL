@@ -14,6 +14,8 @@
 #include "skill.h"
 #include "scissor.h"
 #include "blend.h"
+#include "transform.h"
+
 
 int main(int argc,char *argv[])
 {
@@ -24,13 +26,15 @@ int main(int argc,char *argv[])
     
 //    drawGraph(argc, argv);
     
-    primitive(argc, argv);
+//    primitive(argc, argv);
     
 //    skill(argc, argv);
     
 //    scissor(argc, argv);
     
 //    blend(argc, argv);
+    
+    transform(argc, argv);
     
     return 0;
 }
