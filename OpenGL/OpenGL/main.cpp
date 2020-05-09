@@ -15,11 +15,10 @@
 #include "scissor.h"
 #include "blend.h"
 #include "transform.h"
-
+#include "matrix.h"
 
 int main(int argc,char *argv[])
 {
-    
 //    drawTriangle(argc, argv);
     
 //    drawRectangle(argc, argv);
@@ -34,7 +33,9 @@ int main(int argc,char *argv[])
     
 //    blend(argc, argv);
     
-    transform(argc, argv);
+//    transform(argc, argv);
+    
+    testMatrix(argc, argv);
     
     return 0;
 }

@@ -21,6 +21,7 @@
 		15264DF9245AA1C600F16ECF /* scissor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scissor.h; sourceTree = "<group>"; };
 		15264DFA245AB72900F16ECF /* blend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = blend.h; sourceTree = "<group>"; };
 		153ED4AD246533B2007AD27A /* transform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = transform.h; sourceTree = "<group>"; };
+		153ED4AE246693A1007AD27A /* matrix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = matrix.h; sourceTree = "<group>"; };
 		156E6364245578A300CF04A0 /* OpenGL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenGL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		156E636A245578A500CF04A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		156E636D245578A500CF04A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -85,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				153ED4AD246533B2007AD27A /* transform.h */,
+				153ED4AE246693A1007AD27A /* matrix.h */,
 			);
 			path = 4;
 			sourceTree = "<group>";
