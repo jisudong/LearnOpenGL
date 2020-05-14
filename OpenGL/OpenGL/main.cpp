@@ -16,6 +16,7 @@
 #include "blend.h"
 #include "transform.h"
 #include "matrix.h"
+#include "exercise.h"
 
 int main(int argc,char *argv[])
 {
@@ -35,7 +36,9 @@ int main(int argc,char *argv[])
     
 //    transform(argc, argv);
     
-    testMatrix(argc, argv);
+//    testMatrix(argc, argv);
+    
+    excrcise(argc, argv);
     
     return 0;
 }
