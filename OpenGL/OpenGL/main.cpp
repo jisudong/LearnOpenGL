@@ -17,7 +17,9 @@
 #include "transform.h"
 #include "matrix.h"
 #include "exercise.h"
+#include "texture.h"
 
+    
 int main(int argc,char *argv[])
 {
 //    drawTriangle(argc, argv);
@@ -38,7 +40,9 @@ int main(int argc,char *argv[])
     
 //    testMatrix(argc, argv);
     
-    excrcise(argc, argv);
+//    excrcise(argc, argv);
+    
+    texture1(argc, argv);
     
     return 0;
 }
