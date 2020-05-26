@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		153942C7247CF6BB001F2F05 /* stone.tga in Resources */ = {isa = PBXBuildFile; fileRef = 153942C6247CF6BB001F2F05 /* stone.tga */; };
+		153942CD247D0B35001F2F05 /* floor.tga in Resources */ = {isa = PBXBuildFile; fileRef = 153942CA247D0B35001F2F05 /* floor.tga */; };
+		153942CE247D0B35001F2F05 /* brick.tga in Resources */ = {isa = PBXBuildFile; fileRef = 153942CB247D0B35001F2F05 /* brick.tga */; };
+		153942CF247D0B35001F2F05 /* ceiling.tga in Resources */ = {isa = PBXBuildFile; fileRef = 153942CC247D0B35001F2F05 /* ceiling.tga */; };
 		156E636B245578A500CF04A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 156E636A245578A500CF04A0 /* Assets.xcassets */; };
-		156E636E245578A500CF04A0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 156E636C245578A500CF04A0 /* MainMenu.xib */; };
 		156E637A2455790600CF04A0 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 156E63792455790600CF04A0 /* OpenGL.framework */; };
 		156E637C2455790F00CF04A0 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 156E637B2455790F00CF04A0 /* GLUT.framework */; };
 		156E638E2455797800CF04A0 /* libGLTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 156E638D2455797800CF04A0 /* libGLTools.a */; };
@@ -22,14 +24,16 @@
 		15264DF9245AA1C600F16ECF /* scissor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scissor.h; sourceTree = "<group>"; };
 		15264DFA245AB72900F16ECF /* blend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = blend.h; sourceTree = "<group>"; };
 		153942C6247CF6BB001F2F05 /* stone.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = stone.tga; sourceTree = "<group>"; };
+		153942C9247CFC1D001F2F05 /* tunnel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tunnel.h; sourceTree = "<group>"; };
+		153942CA247D0B35001F2F05 /* floor.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = floor.tga; sourceTree = "<group>"; };
+		153942CB247D0B35001F2F05 /* brick.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = brick.tga; sourceTree = "<group>"; };
+		153942CC247D0B35001F2F05 /* ceiling.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = ceiling.tga; sourceTree = "<group>"; };
 		153ED4AD246533B2007AD27A /* transform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = transform.h; sourceTree = "<group>"; };
 		153ED4AE246693A1007AD27A /* matrix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = matrix.h; sourceTree = "<group>"; };
 		153ED4B7246CD50A007AD27A /* exercise.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = exercise.h; sourceTree = "<group>"; };
 		156E6364245578A300CF04A0 /* OpenGL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenGL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		156E636A245578A500CF04A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		156E636D245578A500CF04A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		156E636F245578A500CF04A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		156E6372245578A500CF04A0 /* OpenGL.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OpenGL.entitlements; sourceTree = "<group>"; };
 		156E63792455790600CF04A0 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		156E637B2455790F00CF04A0 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 		156E637E2455796400CF04A0 /* GLBatchBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBatchBase.h; sourceTree = "<group>"; };
@@ -90,6 +94,9 @@
 			isa = PBXGroup;
 			children = (
 				153942C6247CF6BB001F2F05 /* stone.tga */,
+				153942CB247D0B35001F2F05 /* brick.tga */,
+				153942CC247D0B35001F2F05 /* ceiling.tga */,
+				153942CA247D0B35001F2F05 /* floor.tga */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -135,9 +142,7 @@
 				156E637D2455796400CF04A0 /* include */,
 				156E63912455890200CF04A0 /* src */,
 				156E636A245578A500CF04A0 /* Assets.xcassets */,
-				156E636C245578A500CF04A0 /* MainMenu.xib */,
 				156E636F245578A500CF04A0 /* Info.plist */,
-				156E6372245578A500CF04A0 /* OpenGL.entitlements */,
 				156E638F24557C7200CF04A0 /* main.cpp */,
 			);
 			path = OpenGL;
@@ -209,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				15BDD4252477709C00879A11 /* texture.h */,
+				153942C9247CFC1D001F2F05 /* tunnel.h */,
 			);
 			path = 6;
 			sourceTree = "<group>";
@@ -270,9 +276,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				153942CD247D0B35001F2F05 /* floor.tga in Resources */,
 				156E636B245578A500CF04A0 /* Assets.xcassets in Resources */,
+				153942CE247D0B35001F2F05 /* brick.tga in Resources */,
+				153942CF247D0B35001F2F05 /* ceiling.tga in Resources */,
 				153942C7247CF6BB001F2F05 /* stone.tga in Resources */,
-				156E636E245578A500CF04A0 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,17 +296,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		156E636C245578A500CF04A0 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				156E636D245578A500CF04A0 /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		156E6373245578A500CF04A0 /* Debug */ = {

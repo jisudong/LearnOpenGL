@@ -18,9 +18,10 @@
 #include "matrix.h"
 #include "exercise.h"
 #include "texture.h"
+#include "tunnel.h"
 
-    
-int main(int argc,char *argv[])
+
+int main(int argc, char *argv[])
 {
 //    drawTriangle(argc, argv);
     
@@ -42,7 +43,9 @@ int main(int argc,char *argv[])
     
 //    excrcise(argc, argv);
     
-    texture1(argc, argv);
+//    texture1(argc, argv);
+    
+    tunnel(argc, argv);
     
     return 0;
 }
