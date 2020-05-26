@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		153942C7247CF6BB001F2F05 /* stone.tga in Resources */ = {isa = PBXBuildFile; fileRef = 153942C6247CF6BB001F2F05 /* stone.tga */; };
 		156E636B245578A500CF04A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 156E636A245578A500CF04A0 /* Assets.xcassets */; };
 		156E636E245578A500CF04A0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 156E636C245578A500CF04A0 /* MainMenu.xib */; };
 		156E637A2455790600CF04A0 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 156E63792455790600CF04A0 /* OpenGL.framework */; };
 		156E637C2455790F00CF04A0 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 156E637B2455790F00CF04A0 /* GLUT.framework */; };
 		156E638E2455797800CF04A0 /* libGLTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 156E638D2455797800CF04A0 /* libGLTools.a */; };
 		156E639024557C7200CF04A0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 156E638F24557C7200CF04A0 /* main.cpp */; };
-		15BDD4272477A21200879A11 /* stone.tga in Resources */ = {isa = PBXBuildFile; fileRef = 15BDD4262477A21200879A11 /* stone.tga */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +21,7 @@
 		15264DF8245A844400F16ECF /* skill.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = skill.h; sourceTree = "<group>"; };
 		15264DF9245AA1C600F16ECF /* scissor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scissor.h; sourceTree = "<group>"; };
 		15264DFA245AB72900F16ECF /* blend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = blend.h; sourceTree = "<group>"; };
+		153942C6247CF6BB001F2F05 /* stone.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = stone.tga; sourceTree = "<group>"; };
 		153ED4AD246533B2007AD27A /* transform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = transform.h; sourceTree = "<group>"; };
 		153ED4AE246693A1007AD27A /* matrix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = matrix.h; sourceTree = "<group>"; };
 		153ED4B7246CD50A007AD27A /* exercise.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = exercise.h; sourceTree = "<group>"; };
@@ -51,7 +52,6 @@
 		156E639824558D8900CF04A0 /* rectangle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rectangle.h; sourceTree = "<group>"; };
 		156E639A24559D5900CF04A0 /* graph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = graph.h; sourceTree = "<group>"; };
 		15BDD4252477709C00879A11 /* texture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = texture.h; sourceTree = "<group>"; };
-		15BDD4262477A21200879A11 /* stone.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = stone.tga; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +84,14 @@
 				15264DFA245AB72900F16ECF /* blend.h */,
 			);
 			path = 3;
+			sourceTree = "<group>";
+		};
+		153942C5247CF6BB001F2F05 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				153942C6247CF6BB001F2F05 /* stone.tga */,
+			);
+			path = resources;
 			sourceTree = "<group>";
 		};
 		153ED4AC24652ED0007AD27A /* 4 */ = {
@@ -123,13 +131,13 @@
 		156E6366245578A300CF04A0 /* OpenGL */ = {
 			isa = PBXGroup;
 			children = (
+				153942C5247CF6BB001F2F05 /* resources */,
 				156E637D2455796400CF04A0 /* include */,
 				156E63912455890200CF04A0 /* src */,
 				156E636A245578A500CF04A0 /* Assets.xcassets */,
 				156E636C245578A500CF04A0 /* MainMenu.xib */,
 				156E636F245578A500CF04A0 /* Info.plist */,
 				156E6372245578A500CF04A0 /* OpenGL.entitlements */,
-				15BDD4262477A21200879A11 /* stone.tga */,
 				156E638F24557C7200CF04A0 /* main.cpp */,
 			);
 			path = OpenGL;
@@ -263,7 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				156E636B245578A500CF04A0 /* Assets.xcassets in Resources */,
-				15BDD4272477A21200879A11 /* stone.tga in Resources */,
+				153942C7247CF6BB001F2F05 /* stone.tga in Resources */,
 				156E636E245578A500CF04A0 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
