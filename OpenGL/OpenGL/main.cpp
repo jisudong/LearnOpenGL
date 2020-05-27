@@ -19,6 +19,7 @@
 #include "exercise.h"
 #include "texture.h"
 #include "tunnel.h"
+#include "sphere.h"
 
 
 int main(int argc, char *argv[])
@@ -45,7 +46,9 @@ int main(int argc, char *argv[])
     
 //    texture1(argc, argv);
     
-    tunnel(argc, argv);
+//    tunnel(argc, argv);
+    
+    sphere(argc, argv);
     
     return 0;
 }

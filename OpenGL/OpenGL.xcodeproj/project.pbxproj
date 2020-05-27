@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		151F4C65247D36BD000D379D /* marble.tga in Resources */ = {isa = PBXBuildFile; fileRef = 151F4C62247D36BD000D379D /* marble.tga */; };
+		151F4C66247D36BD000D379D /* marslike.tga in Resources */ = {isa = PBXBuildFile; fileRef = 151F4C63247D36BD000D379D /* marslike.tga */; };
+		151F4C67247D36BD000D379D /* moonLike.tga in Resources */ = {isa = PBXBuildFile; fileRef = 151F4C64247D36BD000D379D /* moonLike.tga */; };
 		153942C7247CF6BB001F2F05 /* stone.tga in Resources */ = {isa = PBXBuildFile; fileRef = 153942C6247CF6BB001F2F05 /* stone.tga */; };
 		153942CD247D0B35001F2F05 /* floor.tga in Resources */ = {isa = PBXBuildFile; fileRef = 153942CA247D0B35001F2F05 /* floor.tga */; };
 		153942CE247D0B35001F2F05 /* brick.tga in Resources */ = {isa = PBXBuildFile; fileRef = 153942CB247D0B35001F2F05 /* brick.tga */; };
@@ -19,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		151F4C62247D36BD000D379D /* marble.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = marble.tga; sourceTree = "<group>"; };
+		151F4C63247D36BD000D379D /* marslike.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = marslike.tga; sourceTree = "<group>"; };
+		151F4C64247D36BD000D379D /* moonLike.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = moonLike.tga; sourceTree = "<group>"; };
+		151F4C68247DFF2C000D379D /* sphere.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sphere.h; sourceTree = "<group>"; };
 		15264DF62458373800F16ECF /* primitive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = primitive.h; sourceTree = "<group>"; };
 		15264DF8245A844400F16ECF /* skill.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = skill.h; sourceTree = "<group>"; };
 		15264DF9245AA1C600F16ECF /* scissor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scissor.h; sourceTree = "<group>"; };
@@ -97,6 +104,9 @@
 				153942CB247D0B35001F2F05 /* brick.tga */,
 				153942CC247D0B35001F2F05 /* ceiling.tga */,
 				153942CA247D0B35001F2F05 /* floor.tga */,
+				151F4C62247D36BD000D379D /* marble.tga */,
+				151F4C63247D36BD000D379D /* marslike.tga */,
+				151F4C64247D36BD000D379D /* moonLike.tga */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -215,6 +225,7 @@
 			children = (
 				15BDD4252477709C00879A11 /* texture.h */,
 				153942C9247CFC1D001F2F05 /* tunnel.h */,
+				151F4C68247DFF2C000D379D /* sphere.h */,
 			);
 			path = 6;
 			sourceTree = "<group>";
@@ -280,7 +291,10 @@
 				156E636B245578A500CF04A0 /* Assets.xcassets in Resources */,
 				153942CE247D0B35001F2F05 /* brick.tga in Resources */,
 				153942CF247D0B35001F2F05 /* ceiling.tga in Resources */,
+				151F4C67247D36BD000D379D /* moonLike.tga in Resources */,
 				153942C7247CF6BB001F2F05 /* stone.tga in Resources */,
+				151F4C65247D36BD000D379D /* marble.tga in Resources */,
+				151F4C66247D36BD000D379D /* marslike.tga in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,7 +428,10 @@
 				CODE_SIGN_ENTITLEMENTS = OpenGL/OpenGL.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/OpenGL/include";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/OpenGL/include",
+					"$(PROJECT_DIR)/OpenGL/include/GL/",
+				);
 				INFOPLIST_FILE = OpenGL/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -436,7 +453,10 @@
 				CODE_SIGN_ENTITLEMENTS = OpenGL/OpenGL.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/OpenGL/include";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/OpenGL/include",
+					"$(PROJECT_DIR)/OpenGL/include/GL/",
+				);
 				INFOPLIST_FILE = OpenGL/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
