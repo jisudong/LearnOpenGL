@@ -2,8 +2,8 @@
 //  camera_c.cpp
 //  LearnOpenGL
 //
-//  Created by 秀健身 on 2019/8/7.
-//  Copyright © 2019 秀健身. All rights reserved.
+//  Created by apple on 2019/8/7.
+//  Copyright © 2019 apple. All rights reserved.
 //
 
 #include "camera_c.hpp"

@@ -2,7 +2,7 @@
 //  colors.hpp
 //  testgl
 //
-//  Created by 秀健身 on 2019/5/21.
+//  Created by apple on 2019/5/21.
 //  Copyright © 2019 自动化. All rights reserved.
 //
 
