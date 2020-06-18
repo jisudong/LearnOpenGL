@@ -54,6 +54,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="yVw-05-tGM" kind="show" id="rgC-E8-bzV"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -85,7 +88,23 @@
                 </glkViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fzh-Dd-QQi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1972" y="-597"/>
+            <point key="canvasLocation" x="1951" y="-875"/>
+        </scene>
+        <!--Cube View Controller-->
+        <scene sceneID="g42-Fu-gZu">
+            <objects>
+                <viewController id="yVw-05-tGM" customClass="CubeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o6g-u4-1Be">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="dDq-0h-v9R"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="R9L-T4-Yaw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e4u-ul-o2H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1951" y="-224"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="RUm-5v-kK5">

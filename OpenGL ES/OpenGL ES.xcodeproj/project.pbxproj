@@ -16,6 +16,7 @@
 		1505A067249B193D0066D0D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1505A066249B193D0066D0D2 /* main.m */; };
 		1505A06F249B1E6C0066D0D2 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1505A06E249B1E6C0066D0D2 /* ImageViewController.m */; };
 		1505A071249B328E0066D0D2 /* kunkun.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1505A070249B328E0066D0D2 /* kunkun.jpg */; };
+		1505A074249B386E0066D0D2 /* CubeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1505A073249B386E0066D0D2 /* CubeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		1505A06D249B1E6C0066D0D2 /* ImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
 		1505A06E249B1E6C0066D0D2 /* ImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 		1505A070249B328E0066D0D2 /* kunkun.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kunkun.jpg; sourceTree = "<group>"; };
+		1505A072249B386E0066D0D2 /* CubeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CubeViewController.h; sourceTree = "<group>"; };
+		1505A073249B386E0066D0D2 /* CubeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CubeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +77,8 @@
 				1505A05B249B19390066D0D2 /* ViewController.m */,
 				1505A06D249B1E6C0066D0D2 /* ImageViewController.h */,
 				1505A06E249B1E6C0066D0D2 /* ImageViewController.m */,
+				1505A072249B386E0066D0D2 /* CubeViewController.h */,
+				1505A073249B386E0066D0D2 /* CubeViewController.m */,
 				1505A05D249B19390066D0D2 /* Main.storyboard */,
 				1505A060249B193D0066D0D2 /* Assets.xcassets */,
 				1505A062249B193D0066D0D2 /* LaunchScreen.storyboard */,
@@ -156,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1505A06F249B1E6C0066D0D2 /* ImageViewController.m in Sources */,
+				1505A074249B386E0066D0D2 /* CubeViewController.m in Sources */,
 				1505A05C249B19390066D0D2 /* ViewController.m in Sources */,
 				1505A056249B19390066D0D2 /* AppDelegate.m in Sources */,
 				1505A067249B193D0066D0D2 /* main.m in Sources */,
