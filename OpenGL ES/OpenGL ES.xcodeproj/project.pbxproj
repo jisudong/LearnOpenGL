@@ -21,6 +21,9 @@
 		1505A08324A1FCDA0066D0D2 /* SDView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1505A08224A1FCDA0066D0D2 /* SDView.m */; };
 		1505A08524A2102D0066D0D2 /* shaderv.vs in Resources */ = {isa = PBXBuildFile; fileRef = 1505A08424A2102D0066D0D2 /* shaderv.vs */; };
 		1505A08724A2106D0066D0D2 /* shaderf.fs in Resources */ = {isa = PBXBuildFile; fileRef = 1505A08624A2106D0066D0D2 /* shaderf.fs */; };
+		1505A08B24A9CE060066D0D2 /* AGLKVertexAttribArrayBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1505A08924A9CE060066D0D2 /* AGLKVertexAttribArrayBuffer.m */; };
+		1505A08E24A9CEBD0066D0D2 /* sceneUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 1505A08D24A9CEBD0066D0D2 /* sceneUtil.m */; };
+		1505A09124A9D9B50066D0D2 /* LightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1505A09024A9D9B50066D0D2 /* LightViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +50,12 @@
 		1505A08224A1FCDA0066D0D2 /* SDView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDView.m; sourceTree = "<group>"; };
 		1505A08424A2102D0066D0D2 /* shaderv.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shaderv.vs; sourceTree = "<group>"; };
 		1505A08624A2106D0066D0D2 /* shaderf.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shaderf.fs; sourceTree = "<group>"; };
+		1505A08924A9CE060066D0D2 /* AGLKVertexAttribArrayBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLKVertexAttribArrayBuffer.m; sourceTree = "<group>"; };
+		1505A08A24A9CE060066D0D2 /* AGLKVertexAttribArrayBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLKVertexAttribArrayBuffer.h; sourceTree = "<group>"; };
+		1505A08C24A9CEBD0066D0D2 /* sceneUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sceneUtil.h; sourceTree = "<group>"; };
+		1505A08D24A9CEBD0066D0D2 /* sceneUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sceneUtil.m; sourceTree = "<group>"; };
+		1505A08F24A9D9B50066D0D2 /* LightViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LightViewController.h; sourceTree = "<group>"; };
+		1505A09024A9D9B50066D0D2 /* LightViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LightViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +88,7 @@
 		1505A053249B19390066D0D2 /* OpenGL ES */ = {
 			isa = PBXGroup;
 			children = (
+				1505A08824A9CDD50066D0D2 /* tools */,
 				1505A054249B19390066D0D2 /* AppDelegate.h */,
 				1505A055249B19390066D0D2 /* AppDelegate.m */,
 				1505A057249B19390066D0D2 /* SceneDelegate.h */,
@@ -95,6 +105,10 @@
 				1505A08224A1FCDA0066D0D2 /* SDView.m */,
 				1505A08424A2102D0066D0D2 /* shaderv.vs */,
 				1505A08624A2106D0066D0D2 /* shaderf.fs */,
+				1505A08F24A9D9B50066D0D2 /* LightViewController.h */,
+				1505A09024A9D9B50066D0D2 /* LightViewController.m */,
+				1505A08C24A9CEBD0066D0D2 /* sceneUtil.h */,
+				1505A08D24A9CEBD0066D0D2 /* sceneUtil.m */,
 				1505A05D249B19390066D0D2 /* Main.storyboard */,
 				1505A060249B193D0066D0D2 /* Assets.xcassets */,
 				1505A062249B193D0066D0D2 /* LaunchScreen.storyboard */,
@@ -103,6 +117,15 @@
 				1505A070249B328E0066D0D2 /* kunkun.jpg */,
 			);
 			path = "OpenGL ES";
+			sourceTree = "<group>";
+		};
+		1505A08824A9CDD50066D0D2 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				1505A08A24A9CE060066D0D2 /* AGLKVertexAttribArrayBuffer.h */,
+				1505A08924A9CE060066D0D2 /* AGLKVertexAttribArrayBuffer.m */,
+			);
+			path = tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,8 +204,11 @@
 				1505A06F249B1E6C0066D0D2 /* ImageViewController.m in Sources */,
 				1505A074249B386E0066D0D2 /* CubeViewController.m in Sources */,
 				1505A08024A1FCC90066D0D2 /* GLSLImageViewController.m in Sources */,
+				1505A08B24A9CE060066D0D2 /* AGLKVertexAttribArrayBuffer.m in Sources */,
+				1505A09124A9D9B50066D0D2 /* LightViewController.m in Sources */,
 				1505A05C249B19390066D0D2 /* ViewController.m in Sources */,
 				1505A056249B19390066D0D2 /* AppDelegate.m in Sources */,
+				1505A08E24A9CEBD0066D0D2 /* sceneUtil.m in Sources */,
 				1505A08324A1FCDA0066D0D2 /* SDView.m in Sources */,
 				1505A067249B193D0066D0D2 /* main.m in Sources */,
 				1505A059249B19390066D0D2 /* SceneDelegate.m in Sources */,
